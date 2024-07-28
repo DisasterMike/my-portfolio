@@ -1,4 +1,4 @@
-<div class="home-top" style="background-color: black; height: 100vh">
+<div class="home-top text-light" style="background-color: black; height: 100vh">
   <header style="height: 7vh">
     <div class="wrapper flex-box">
       <%# image_tag "LogoWithoutName.png", width: "100px" %>
@@ -10,8 +10,27 @@
   <%= render "core/navbar" %>
   <div class="banner" style="height: 86vh">
     <div class="flex-box f-justify-center f-align-center" style="height: 100%;">
-      <%= image_tag "LogoWithName.png" %>
-      <h1>S</h1>
+      <div class="banner-logo flex-box f-align-end">
+        <%# image_tag "LogoWithName.png" %>
+        <%# <h2>One</h2> %>
+        <div class="flex-box left-words">
+          <h2>O</h2>
+          <h2>n</h2>
+          <h2>e</h2>
+        </div>
+        <%= image_tag "LogoWithoutName.png", width: "400px" %>
+        <div class="flex-box right-words">
+          <h2>M</h2>
+          <h2>a</h2>
+          <h2>n</h2>
+          <h2>y</h2>
+          <h2>H</h2>
+          <h2>a</h2>
+          <h2>t</h2>
+          <h2>s</h2>
+        </div>
+        <%# <h1>S</h1> %>
+      </div>
     </div>
   </div>
 </div>
