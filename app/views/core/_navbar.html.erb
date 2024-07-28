@@ -1,10 +1,11 @@
-<div class="nav-wrapper" data-controller="navbar" data-navbar-target="mainNav">
-  <div class="main-nav-inner flex-box f-justify-center f-align-center">
-    <div>
-      <ul class="flex-box">
-        <li style="list-style-type: none">Home</li>
-        <li style="list-style-type: none">Games</li>
-      </ul>
-    </div>
+<div class="nav-wrapper flex-box f-justify-center f-align-center" data-controller="navbar" data-navbar-target="mainNav">
+  <div class="main-nav-inner">
+    <%# image_tag "LogoWithoutName.png", width: "40px" %>
+    <ul class="flex-box f-justify-center f-align-center">
+      <li style="list-style-type: none"><%= link_to "Web Development", "#" %></li>
+      <li style="list-style-type: none"><%= link_to "Video Games", "#" %></li>
+      <li style="list-style-type: none"><%= link_to "Board Games", "#" %></li>
+      <li style="list-style-type: none"><%= link_to "About Me", "#" %></li>
+    </ul>
   </div>
 </div>

@@ -16,7 +16,7 @@ export default class extends Controller {
     const navHeight = this.mainNavTarget.offsetHeight;
     // console.log(navHeight);
     // const observerMarginValues = `${navHeight}px 0px 0px 0px`
-    const observerMarginValues = `${0}px 0px 0px 0px`
+    const observerMarginValues = `${10}px 0px 0px 0px`
 
     //
     const navObserver = new IntersectionObserver((entries) => {
