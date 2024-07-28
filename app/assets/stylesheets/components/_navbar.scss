@@ -1,0 +1,20 @@
+.nav-wrapper{
+  height: 7vh;
+  padding-top: 16px;
+}
+
+.top-nav{
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+
+.sticking-nav{
+  position: sticky;
+  top: 0;
+
+  .main-nav-inner{
+    height: 100%;
+    background-color: $warning;
+  }
+}

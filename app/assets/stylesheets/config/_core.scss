@@ -2,10 +2,18 @@
   display: flex;
 }
 
-.justify-center{
+.f-justify-center{
   justify-content: center;
 }
 
-.align-center{
+.f-align-center{
   align-items: center;
+}
+
+.f-space-around{
+  justify-content: space-around;
+}
+
+.f-between{
+  justify-content: space-between;
 }

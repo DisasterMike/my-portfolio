@@ -1,21 +1,27 @@
 import { Controller } from "@hotwired/stimulus"
 
+// const observerMarginValues = "100px 0px 0px 0px";
+
 // Connects to data-controller="navbar"
 export default class extends Controller {
+  static targets = [ "mainNav" ]
+
   connect() {
-  }
-
-  static afterLoad(identifier, application){
-    console.log("hello");
-    const primaryHeader = document.querySelector(".main-nav");
+    // create div that determines when to change the navbar
     const scrollWatcher = document.createElement("div");
-
+    // set data attribute so we know what it does
     scrollWatcher.setAttribute("data-scroll-watcher", "");
-    primaryHeader.before(scrollWatcher);
+    this.mainNavTarget.before(scrollWatcher);
 
+    const navHeight = this.mainNavTarget.offsetHeight;
+    // console.log(navHeight);
+    // const observerMarginValues = `${navHeight}px 0px 0px 0px`
+    const observerMarginValues = `${0}px 0px 0px 0px`
+
+    //
     const navObserver = new IntersectionObserver((entries) => {
-      primaryHeader.classList.toggle("sticking", !entries[0].isIntersecting)
-    }, {rootMargin: "200px 0px 0px 0px"});
+      this.mainNavTarget.classList.toggle("sticking-nav", !entries[0].isIntersecting) // second parameter makes it so the toggle will only remove if false, or add if true
+    }, {rootMargin: observerMarginValues});
 
     navObserver.observe(scrollWatcher);
   }
