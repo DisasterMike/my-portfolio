@@ -11,5 +11,8 @@ export default class extends Controller {
     letters.forEach(letter => {
       letter.classList.toggle("letter-buttons");
     });
+    const helloText = this.element.querySelector(".hello-text");
+    // helloText.innerText = "👋🏻 Hi, I'm Michael";
+    helloText.innerText = "";
   }
 }

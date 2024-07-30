@@ -31,37 +31,37 @@
     text-shadow: 5px -5px 0px rgb(255, 255, 255);
   }
   .l1:hover{
-    text-shadow: 5px -5px 0px rgb(82, 154, 51);
+    text-shadow: 5px -5px 0px green;
   }
   .l2:hover{
-    text-shadow: 5px -5px 0px rgb(206, 188, 22);
+    text-shadow: 5px -5px 0px yellow;
   }
   .l3:hover{
-    text-shadow: 5px -5px 0px rgb(154, 51, 51);
+    text-shadow: 5px -5px 0px rgb(226, 10, 10);
   }
   .l4:hover{
-    text-shadow: 5px -5px 0px rgb(51, 144, 154);
+    text-shadow: 5px -5px 0px lightblue;
   }
   .l5:hover{
-    text-shadow: 5px -5px 0px rgb(174, 107, 36);
+    text-shadow: 5px -5px 0px orange;
   }
   .l6:hover{
-    text-shadow: 5px -5px 0px rgb(116, 51, 154);
+    text-shadow: 5px -5px 0px purple;
   }
   .l7:hover{
-    text-shadow: 5px -5px 0px rgb(154, 51, 116);
+    text-shadow: 5px -5px 0px pink;
   }
   .l8:hover{
-    text-shadow: 5px -5px 0px rgb(51, 61, 154);
+    text-shadow: 5px -5px 0px rgb(10, 10, 231);
   }
   .l9:hover{
-    text-shadow: 5px -5px 0px rgb(82, 51, 154);
+    text-shadow: 5px -5px 0px lightgoldenrodyellow;
   }
   .l10:hover{
-    text-shadow: 5px -5px 0px rgb(51, 154, 82);
+    text-shadow: 5px -5px 0px lightcyan;
   }
   .l11:hover{
-    text-shadow: 5px -5px 0px rgb(51, 154, 132);
+    text-shadow: 5px -5px 0px lightsalmon;
   }
   // .moving-letter:hover{
   //   color: transparent;
@@ -101,8 +101,8 @@
 
 .hello-text{
   position: absolute;
-  top: 10px;
-  left: 240px;
+  top: 30px;
+  left: 260px;
   transform: rotate(340deg);
 }
 
