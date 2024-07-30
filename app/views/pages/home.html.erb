@@ -5,12 +5,12 @@
     </div>
   </header>
   <%= render "core/navbar" %>
-  <div class="banner" style="height: 83vh">
+  <div data-controller="logo-letters" class="banner" style="height: 83vh">
     <div class="flex-box f-justify-center f-align-center" style="height: 100%;">
       <div class="banner-logo flex-box f-align-end">
         <%# image_tag "LogoWithName.png" %>
         <%# <h2>One</h2> %>
-        <h3 class="hello-text">👋🏻 Hi, I'm Michael!</h3>
+        <h3 class="hello-text">👇🏻 Click me!</h3>
         <div class="flex-box left-words">
           <h2 class="moving-letter l1">O</h2>
           <h2 class="static-letter">O</h2>
@@ -19,7 +19,7 @@
           <h2 class="moving-letter l3" style="left: 144px">e</h2>
           <h2 class="static-letter">e</h2>
         </div>
-        <%= image_tag "LogoDesignLighterBlack.png", width: "400px" %>
+        <div data-action="click->logo-letters#buttonsToggle"><%= image_tag "LogoDesignLighterBlack.png", width: "400px" %></div>
         <div class="flex-box right-words">
           <h2 class="moving-letter l4">M</h2>
           <h2 class="static-letter">M</h2>
