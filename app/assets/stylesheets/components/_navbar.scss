@@ -27,7 +27,7 @@
   a{
     text-decoration: none;
     transition: all 0.2s;
-    color: white;
+    color: var(--white-text);
   }
   a:hover{
     // -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@
 
     // color: rgb(107, 107, 107);
     // background-color: rgb(26, 25, 25);
-    color: rgb(79, 119, 150);
+    color: var(--link-hover);
   }
 }
 
@@ -50,7 +50,7 @@
 
   .main-nav-inner{
     // width: 75%;
-    background-color: #0f0f0fd8;
+    background-color: rgba(var(--black-rgb), 0.8);
   }
 
   ul{
