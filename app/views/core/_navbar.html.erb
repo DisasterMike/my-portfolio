@@ -6,7 +6,7 @@
         <li style="list-style-type: none">
           <%= link_to web_path do %>
             <i class="fa-brands fa-html5"></i>
-            <p>Web Development</p>
+            <p><%= t("nav-web") %></p>
           <% end %>
         </li>
       </div>
@@ -14,7 +14,7 @@
         <li style="list-style-type: none">
           <%= link_to games_path do %>
             <i class="fa-solid fa-gamepad"></i>
-            <p>Video Games</p>
+            <p><%= t("nav-games") %></p>
           <% end %>
         </li>
       </div>
@@ -22,7 +22,7 @@
         <li style="list-style-type: none">
           <%= link_to boardgames_path do %>
             <i class="fa-solid fa-dice-six"></i>
-            <p>Board Games</p>
+            <p><%= t("nav-board-games") %></p>
           <% end %>
         </li>
       </div>
@@ -30,7 +30,7 @@
         <li style="list-style-type: none">
           <%= link_to about_path do %>
             <i class="fa-solid fa-address-card"></i>
-            <p>About Me</p>
+            <p><%= t("nav-about-me") %></p>
           <% end %>
         </li>
       </div>

@@ -1,7 +1,25 @@
 <div class="home-top">
   <header style="height: 10vh">
-    <div class="wrapper flex-box">
-      <%# link_to "About me", "#" %>
+    <div class="wrapper">
+      <div class="lang-toggle flex-box f-justify-end">
+        <p>English</p>
+        <% if params[:locale] != "jp" %>
+          <%= link_to root_path(params: { locale: "jp" }) do %>
+            <label data-controller="language-toggle" id="language-toggle" class="switch">
+              <input type="checkbox" data-language-toggle-target="toggle">
+              <span class="slider round"></span>
+            </label>
+          <% end %>
+        <% else %>
+          <%= link_to root_path do %>
+            <label data-controller="language-toggle" id="language-toggle" class="switch">
+              <input type="checkbox" data-language-toggle-target="toggle">
+              <span class="slider round"></span>
+            </label>
+          <% end %>
+        <% end %>
+        <p>日本語</p>
+      </div>
     </div>
   </header>
   <%= render "core/navbar" %>
@@ -10,7 +28,7 @@
       <div class="banner-logo flex-box f-align-end">
         <%# image_tag "LogoWithName.png" %>
         <%# <h2>One</h2> %>
-        <h3 class="hello-text">👇🏻 Click me!</h3>
+        <h3 class="hello-text">👇🏻 <%= t("logo-click-me") %></h3>
         <div class="flex-box left-words">
           <h2 class="moving-letter l1">O</h2>
           <h2 class="static-letter">O</h2>
@@ -43,5 +61,6 @@
     </div>
   </div>
   <div style="height: 10000px; background-color: #c7c7c7;">
+    <%= t("hello") %>
   </div>
 </div>
