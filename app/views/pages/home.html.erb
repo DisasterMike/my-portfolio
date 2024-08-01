@@ -1,9 +1,25 @@
 <div class="home-top">
   <header style="height: 10vh">
-    <div class="wrapper flex-box">
-      <%= link_to "English", root_path %>
-      <%= link_to "日本語", root_path(params: { locale: "jp" }) %>
-      <%# link_to "About me", "#" %>
+    <div class="wrapper">
+      <div class="lang-toggle flex-box f-justify-end">
+        <p>English</p>
+        <% if params[:locale] != "jp" %>
+          <%= link_to root_path(params: { locale: "jp" }) do %>
+            <label data-controller="language-toggle" id="language-toggle" class="switch">
+              <input type="checkbox" data-language-toggle-target="toggle">
+              <span class="slider round"></span>
+            </label>
+          <% end %>
+        <% else %>
+          <%= link_to root_path do %>
+            <label data-controller="language-toggle" id="language-toggle" class="switch">
+              <input type="checkbox" data-language-toggle-target="toggle">
+              <span class="slider round"></span>
+            </label>
+          <% end %>
+        <% end %>
+        <p>日本語</p>
+      </div>
     </div>
   </header>
   <%= render "core/navbar" %>
