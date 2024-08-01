@@ -1,0 +1,31 @@
+.marquee{
+  white-space: nowrap;
+  // background-color: pink;
+  overflow: hidden;
+  width: 100%;
+  padding: 25px 0;
+  background-color: var(--white-text);
+  color: var(--black);
+
+  // h2{
+  //   animation: animate 5s linear infinite;
+  //   padding-left: 100%;
+  //   padding-right: 100%;
+  // }
+
+  div{
+    animation: animate 20s linear infinite;
+    padding-left: 100%;
+    padding-right: 80%;
+    gap: 100px;
+  }
+  // h2{
+  //   font-size: 2rem;
+  // }
+}
+
+@keyframes animate{
+  100%{
+    transform: translate(-100%, 0);
+  }
+}
