@@ -63,10 +63,10 @@
   .l11:hover{
     text-shadow: 5px -5px 0px lightsalmon;
   }
-  // .moving-letter:hover{
-  //   color: transparent;
-  //   text-shadow: 5px -5px 0px rgb(255, 255, 255);
-  // }
+  .moving-letter:hover{
+    color: transparent;
+    text-shadow: 5px -5px 0px var(--orange);
+  }
   .letter-buttons{
     position: absolute;
     color: transparent;
