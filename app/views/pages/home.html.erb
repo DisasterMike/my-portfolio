@@ -60,26 +60,38 @@
       </div>
     </div>
   </div>
-  <div style="height: 10000px; background-color: var(--grey);">
-    <div>
-      <div class="marquee">
-        <div class="flex-box">
-          <h2>C#</h2>
-          <h2>HTML</h2>
-          <h2>CSS</h2>
-          <h2>Javascript</h2>
-          <h2>Ruby</h2>
-          <h2>SQL</h2>
-          <h2>ClipStudioPaint</h2>
-        </div>
+  <div>
+    <div class="marquee">
+      <div class="flex-box">
+        <h2>C#</h2>
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>Javascript</h2>
+        <h2>Ruby</h2>
+        <h2>SQL</h2>
+        <h2>ClipStudioPaint</h2>
       </div>
-    </div>
-    <div id="profile-container" style="margin: 0;">
-      <div class="flex-box f-align-center">
-        <%= image_tag "me.jpg", width: "400px", style: "position: relative; top: 100px; z-index: 1; margin-left: 74px; transform: rotate(353deg); border: 10px solid white; filter: grayscale(100%);" %>
-        <div style="width: 400px; height: 400px; background-color: var(--orange); position: relative; top: 51px; right: 316px; transform: rotate(7deg);"></div>
-      </div>
-      <div class=""></div>
     </div>
   </div>
+  <div id="profile" style="background-color: var(--grey); margin: 0;">
+    <div style="min-height: 80px; border-bottom: 2px solid #e9e9e9; width: 45%;">
+    </div>
+    <div class="row" style="padding: 150px 0; margin: 0;">
+      <div class="col-5 flex-box f-align-center" style="position: relative;">
+        <%= image_tag "me.jpg", width: "400px", style: "position: relative; z-index: 1; margin-left: 90px; transform: rotate(353deg); border: 10px solid white; filter: grayscale(100%);" %>
+        <div style="width: 400px; height: 400px; background-color: var(--orange); position: absolute; top: 0; left: 170px; transform: rotate(7deg);"></div>
+      </div>
+      <div class="col-7">
+        <div class="w-75 h-75 border border-2"></div>
+      </div>
+    </div>
+  </div>
+  <div id="hobbies" style="height: 100vh; background-color: #4e4e4e;">
+    <div style="min-height: 80px; border-bottom: 2px solid #e9e9e9; width: 45%; margin: 0 0 0 auto;">
+    </div>
+  </div>
+  <div id="socials" style="height: 100vh; background-color: #36557c">
+  </div>
+  <footer  style="height: 50vh;">
+  </footer>
 </div>
