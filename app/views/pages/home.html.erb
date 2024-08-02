@@ -24,56 +24,59 @@
   </header>
   <%= render "core/navbar" %>
   <div data-controller="logo-letters" class="banner" style="height: 83vh">
-    <div class="flex-box f-justify-center f-align-center" style="height: 100%;">
-      <div class="banner-logo flex-box f-align-end">
-        <%# image_tag "LogoWithName.png" %>
-        <%# <h2>One</h2> %>
-        <h3 class="hello-text">👇🏻 <%= t("logo-click-me") %></h3>
-        <div class="flex-box left-words">
-          <h2 class="moving-letter l1">O</h2>
-          <h2 class="static-letter">O</h2>
-          <h2 class="moving-letter l2" style="left: 81px">n</h2>
-          <h2 class="static-letter">n</h2>
-          <h2 class="moving-letter l3" style="left: 144px">e</h2>
-          <h2 class="static-letter">e</h2>
+    <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
+      <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1;">
+        <div class="banner-logo flex-box f-align-end">
+          <%# image_tag "LogoWithName.png" %>
+          <%# <h2>One</h2> %>
+          <h3 class="hello-text">👇🏻 <%= t("logo-click-me") %></h3>
+          <div class="flex-box left-words">
+            <h2 class="moving-letter l1">O</h2>
+            <h2 class="static-letter">O</h2>
+            <h2 class="moving-letter l2" style="left: 81px">n</h2>
+            <h2 class="static-letter">n</h2>
+            <h2 class="moving-letter l3" style="left: 144px">e</h2>
+            <h2 class="static-letter">e</h2>
+          </div>
+          <div data-action="click->logo-letters#buttonsToggle"><%= image_tag "LogoDesignLighterBlack.png", width: "400px" %></div>
+          <div class="flex-box right-words">
+            <h2 class="moving-letter l4">M</h2>
+            <h2 class="static-letter">M</h2>
+            <h2 class="moving-letter l5" style="left: 101px">a</h2>
+            <h2 class="static-letter">a</h2>
+            <h2 class="moving-letter l6" style="left: 156px">n</h2>
+            <h2 class="static-letter">n</h2>
+            <h2 class="moving-letter l7" style="left: 218px">y</h2>
+            <h2 class="static-letter">y</h2>
+            <h2 class="moving-letter l8" style="left: 272px">H</h2>
+            <h2 class="static-letter">H</h2>
+            <h2 class="moving-letter l9" style="left: 352px">a</h2>
+            <h2 class="static-letter">a</h2>
+            <h2 class="moving-letter l10" style="left: 408px">t</h2>
+            <h2 class="static-letter">t</h2>
+            <h2 class="moving-letter l11" style="left: 444px">s</h2>
+            <h2 class="static-letter">s</h2>
+          </div>
+          <%# <h1>S</h1> %>
         </div>
-        <div data-action="click->logo-letters#buttonsToggle"><%= image_tag "LogoDesignLighterBlack.png", width: "400px" %></div>
-        <div class="flex-box right-words">
-          <h2 class="moving-letter l4">M</h2>
-          <h2 class="static-letter">M</h2>
-          <h2 class="moving-letter l5" style="left: 101px">a</h2>
-          <h2 class="static-letter">a</h2>
-          <h2 class="moving-letter l6" style="left: 156px">n</h2>
-          <h2 class="static-letter">n</h2>
-          <h2 class="moving-letter l7" style="left: 218px">y</h2>
-          <h2 class="static-letter">y</h2>
-          <h2 class="moving-letter l8" style="left: 272px">H</h2>
-          <h2 class="static-letter">H</h2>
-          <h2 class="moving-letter l9" style="left: 352px">a</h2>
-          <h2 class="static-letter">a</h2>
-          <h2 class="moving-letter l10" style="left: 408px">t</h2>
-          <h2 class="static-letter">t</h2>
-          <h2 class="moving-letter l11" style="left: 444px">s</h2>
-          <h2 class="static-letter">s</h2>
+      </div>
+      <div>
+        <div class="marquee">
+          <div class="flex-box">
+            <h2>C#</h2>
+            <h2>HTML</h2>
+            <h2>CSS</h2>
+            <h2>Javascript</h2>
+            <h2>Ruby</h2>
+            <h2>SQL</h2>
+            <h2>ClipStudioPaint</h2>
+          </div>
         </div>
-        <%# <h1>S</h1> %>
       </div>
     </div>
   </div>
-  <div>
-    <div class="marquee">
-      <div class="flex-box">
-        <h2>C#</h2>
-        <h2>HTML</h2>
-        <h2>CSS</h2>
-        <h2>Javascript</h2>
-        <h2>Ruby</h2>
-        <h2>SQL</h2>
-        <h2>ClipStudioPaint</h2>
-      </div>
-    </div>
-  </div>
-  <div id="profile" style="background-color: var(--grey); margin: 0;">
+  <%# background: linear-gradient(0.19turn, #0f0f0f, #95959554, #000000); %>
+  <div id="profile" style="background: linear-gradient(#0F0F0F, #373737); margin: 0;">
     <div style="min-height: 80px; border-bottom: 2px solid #e9e9e9; width: 45%;">
     </div>
     <div class="row" style="padding: 150px 0; margin: 0;">
@@ -86,7 +89,7 @@
       </div>
     </div>
   </div>
-  <div id="hobbies" style="height: 100vh; background-color: #4e4e4e;">
+  <div id="hobbies" style="height: 100vh; background-color: #373737;">
     <div style="min-height: 80px; border-bottom: 2px solid #e9e9e9; width: 45%; margin: 0 0 0 auto;">
     </div>
   </div>
@@ -94,5 +97,8 @@
   </div>
   <footer  style="height: 50vh;">
     <p>©️One2ManyHats 2024</p>
+    <div>
+      <p></p>
+    </div>
   </footer>
 </div>
