@@ -11,7 +11,7 @@
             </label>
           <% end %>
         <% else %>
-          <%= link_to root_path do %>
+          <%= link_to root_path(params: { locale: "en" }) do %>
             <label data-controller="language-toggle" id="language-toggle" class="switch">
               <input type="checkbox" data-language-toggle-target="toggle">
               <span class="slider round"></span>
@@ -38,7 +38,7 @@
             <h2 class="moving-letter l3" style="left: 144px">e</h2>
             <h2 class="static-letter">e</h2>
           </div>
-          <div data-action="click->logo-letters#buttonsToggle"><%= image_tag "LogoDesignLighterBlack.png", width: "400px" %></div>
+          <div data-action="click->logo-letters#buttonsToggle"><%= image_tag "LogoDesignLighterBlack.png", width: "400px", style: "cursor: pointer;" %></div>
           <div class="flex-box right-words">
             <h2 class="moving-letter l4">M</h2>
             <h2 class="static-letter">M</h2>
