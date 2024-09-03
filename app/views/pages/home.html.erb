@@ -1,25 +1,7 @@
 <div class="home-top">
   <header style="height: 10vh">
     <div class="wrapper">
-      <div class="lang-toggle flex-box f-justify-end">
-        <p>English</p>
-        <% if params[:locale] != "jp" %>
-          <%= link_to root_path(params: { locale: "jp" }) do %>
-            <label data-controller="language-toggle" id="language-toggle" class="switch">
-              <input type="checkbox" data-language-toggle-target="toggle">
-              <span class="slider round"></span>
-            </label>
-          <% end %>
-        <% else %>
-          <%= link_to root_path(params: { locale: "en" }) do %>
-            <label data-controller="language-toggle" id="language-toggle" class="switch">
-              <input type="checkbox" data-language-toggle-target="toggle">
-              <span class="slider round"></span>
-            </label>
-          <% end %>
-        <% end %>
-        <p>日本語</p>
-      </div>
+      <%= render "core/language_toggle" %>
     </div>
   </header>
   <%= render "core/navbar" %>
@@ -30,72 +12,53 @@
           <%# image_tag "LogoWithName.png" %>
           <%# <h2>One</h2> %>
           <h3 class="hello-text">👇🏻 <%= t("logo-click-me") %></h3>
-          <div class="flex-box left-words">
-            <h2 class="moving-letter l1">O</h2>
-            <h2 class="static-letter">O</h2>
-            <h2 class="moving-letter l2" style="left: 81px">n</h2>
-            <h2 class="static-letter">n</h2>
-            <h2 class="moving-letter l3" style="left: 144px">e</h2>
-            <h2 class="static-letter">e</h2>
-          </div>
-          <div data-action="click->logo-letters#buttonsToggle"><%= image_tag "LogoDesignLighterBlack.png", width: "400px", style: "cursor: pointer;" %></div>
-          <div class="flex-box right-words">
-            <h2 class="moving-letter l4">M</h2>
-            <h2 class="static-letter">M</h2>
-            <h2 class="moving-letter l5" style="left: 101px">a</h2>
-            <h2 class="static-letter">a</h2>
-            <h2 class="moving-letter l6" style="left: 156px">n</h2>
-            <h2 class="static-letter">n</h2>
-            <h2 class="moving-letter l7" style="left: 218px">y</h2>
-            <h2 class="static-letter">y</h2>
-            <h2 class="moving-letter l8" style="left: 272px">H</h2>
-            <h2 class="static-letter">H</h2>
-            <h2 class="moving-letter l9" style="left: 352px">a</h2>
-            <h2 class="static-letter">a</h2>
-            <h2 class="moving-letter l10" style="left: 408px">t</h2>
-            <h2 class="static-letter">t</h2>
-            <h2 class="moving-letter l11" style="left: 444px">s</h2>
-            <h2 class="static-letter">s</h2>
-          </div>
+          <%= render "core/logo_banner" %>
           <%# <h1>S</h1> %>
         </div>
       </div>
-      <div>
-        <div class="marquee">
-          <div class="flex-box">
-            <h2>C#</h2>
-            <h2>HTML</h2>
-            <h2>CSS</h2>
-            <h2>Javascript</h2>
-            <h2>Ruby</h2>
-            <h2>SQL</h2>
-            <h2>ClipStudioPaint</h2>
-          </div>
+      <%= render "core/home_marquee" %>
+    </div>
+  </div>
+  <%# background: linear-gradient(#0F0F0F, #252525) %>
+  <div id="profile" style="background: #C7C7C7; padding-bottom: 65px;">
+    <div class="about-row row m-0">
+      <%# <div class="col-12" style="height: 10vh;"></div> %>
+      <div class="col-5 flex-box f-align-center f-justify-end" style="height: 65vh; position: relative;">
+        <%= image_tag "me.jpg", width: "400px" %>
+        <div class="about-img-back"></div>
+      </div>
+      <div class="col-7 flex-box f-align-center">
+        <div class="about-info flex-box f-justify-center f-align-center">
+          <h2>About</h2>
         </div>
       </div>
     </div>
   </div>
-  <%# background: linear-gradient(#0F0F0F, #252525) %>
-  <div id="profile" style="height: 100vh; background: #C7C7C7; margin: 0;">
-    <div style="min-height: 80px; border-bottom: 2px solid #e9e9e9; width: 45%;">
-    </div>
-    <div class="row" style="padding: 150px 0; margin: 0;">
-      <div class="col-5 flex-box f-align-center" style="position: relative;">
-        <%= image_tag "me.jpg", width: "300px", style: "position: relative; z-index: 1; margin-left: 90px; transform: rotate(353deg); border: 10px solid white; filter: grayscale(100%);" %>
-        <div style="width: 300px; height: 300px; background-color: var(--orange); position: absolute; top: 0; left: 170px; transform: rotate(7deg);"></div>
+  <div id="hobbies" style="height: 75vh; background-color: var(--black);">
+    <div class="col-12 flex-box f-space-around">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="hobby-circular-icon flex-box f-justify-center f-align-center">
+          <%= image_tag "web-icon.png", width: "55px" %>
+        </div>
+        <h4 style="position: relative; bottom: 15px;">Web</h4>
       </div>
-      <div class="col-7">
-        <div class="w-75 h-75 border border-2"></div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="hobby-circular-icon flex-box f-justify-center f-align-center">
+          <%= image_tag "unity-icon.png", width: "60px" %>
+        </div>
+        <h4 style="position: relative; bottom: 15px;">Games</h4>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="hobby-circular-icon flex-box f-justify-center f-align-center">
+          <%= image_tag "meeple-icon.png", width: "55px" %>
+        </div>
+        <h4 style="position: relative; bottom: 15px;">Board Games</h4>
       </div>
     </div>
   </div>
-  <div id="hobbies" style="height: 100vh; background: linear-gradient(#252525, #373737);">
-    <div style="min-height: 80px; border-bottom: 2px solid #e9e9e9; width: 45%; margin: 0 0 0 auto;">
-    </div>
+  <div id="socials" style="height: 75vh; background-color: var(--grey)">
   </div>
-  <div id="socials" style="height: 100vh; background-color: var(--grey)">
-  </div>
-  <footer  style="height: 50vh;">
+  <footer  style="height: 15vh;">
     <p>©️One2ManyHats 2024</p>
     <div>
       <p></p>
