@@ -20,10 +20,10 @@
     </div>
   </div>
   <%# background: linear-gradient(#0F0F0F, #252525) %>
-  <div id="profile" style="background: #C7C7C7; margin: 0;">
+  <div id="profile" style="background: #C7C7C7; padding-bottom: 65px;">
     <div class="row m-0">
       <%# <div class="col-12" style="height: 10vh;"></div> %>
-      <div class="col-5 flex-box f-align-center f-justify-end" style="height: 75vh; position: relative;">
+      <div class="col-5 flex-box f-align-center f-justify-end" style="height: 65vh; position: relative;">
         <%= image_tag "me.jpg", width: "400px", style: "position: relative; right: 0; z-index: 2; transform: rotate(353deg); border: 10px solid white; filter: grayscale(100%);" %>
         <div style="width: 400px; height: 400px; background-color: var(--orange); position: absolute; top: 100px; z-index: 1; transform: rotate(7deg);"></div>
       </div>
@@ -32,24 +32,33 @@
           <h2>About</h2>
         </div>
       </div>
-      <div class="col-12 flex-box f-space-around" style="height: 20vh; padding: 0 60px; background-color: var(--black);">
-        <div class="circular-icon flex-box f-justify-center f-align-center" style="height: 100px; width: 100px; border-radius: 50%; background-color: white; position: relative; top: -50px;">
-          <i class="fa-brands fa-windows" style="color: black; font-size: 3rem;"></i>
-        </div>
-        <div class="circular-icon flex-box f-justify-center f-align-center" style="height: 100px; width: 100px; border-radius: 50%; background-color: white; position: relative; top: -50px;">
-          <%= image_tag "unity-icon.png", width: "75px" %>
-        </div>
-        <div class="circular-icon" style="height: 100px; width: 100px; border-radius: 50%; background-color: white; position: relative; top: -50px;"></div>
-      </div>
     </div>
   </div>
-  <div id="hobbies" style="height: 100vh; background: linear-gradient(#252525, #373737);">
-    <div style="min-height: 80px; border-bottom: 2px solid #e9e9e9; width: 45%; margin: 0 0 0 auto;">
+  <div id="hobbies" style="height: 100vh; background-color: var(--black);">
+    <div class="col-12 flex-box f-space-around" style="height: 20vh; padding: 0 60px; background-color: var(--black);">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="circular-icon flex-box f-justify-center f-align-center" style="height: 100px; width: 100px; border-radius: 50%; background-color: white; position: relative; top: -50px;">
+          <%= image_tag "web-icon.png", width: "55px" %>
+        </div>
+        <h4 style="position: relative; bottom: 15px;">Web</h4>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="circular-icon flex-box f-justify-center f-align-center" style="height: 100px; width: 100px; border-radius: 50%; background-color: white; position: relative; top: -50px;">
+          <%= image_tag "unity-icon.png", width: "60px" %>
+        </div>
+        <h4 style="position: relative; bottom: 15px;">Games</h4>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="circular-icon flex-box f-justify-center f-align-center" style="height: 100px; width: 100px; border-radius: 50%; background-color: white; position: relative; top: -50px;">
+          <%= image_tag "meeple-icon.png", width: "55px" %>
+        </div>
+        <h4 style="position: relative; bottom: 15px;">Board Games</h4>
+      </div>
     </div>
   </div>
   <div id="socials" style="height: 100vh; background-color: var(--grey)">
   </div>
-  <footer  style="height: 50vh;">
+  <footer  style="height: 15vh;">
     <p>©️One2ManyHats 2024</p>
     <div>
       <p></p>
