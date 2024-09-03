@@ -39,7 +39,7 @@
 
     // color: rgb(107, 107, 107);
     // background-color: rgb(26, 25, 25);
-    color: var(--orange);
+    color: var(--highlight);
   }
 }
 
@@ -71,5 +71,15 @@
 
   i{
     font-size: 1.3rem;
+  }
+}
+
+// Media queries
+
+@media (max-width: 992px){
+  .main-nav-inner{
+    li{
+      font-size: 1rem;
+    }
   }
 }

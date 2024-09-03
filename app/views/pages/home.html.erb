@@ -9,11 +9,8 @@
     <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
       <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1;">
         <div class="banner-logo flex-box f-align-end">
-          <%# image_tag "LogoWithName.png" %>
-          <%# <h2>One</h2> %>
           <h3 class="hello-text">👇🏻 <%= t("logo-click-me") %></h3>
           <%= render "core/logo_banner" %>
-          <%# <h1>S</h1> %>
         </div>
       </div>
       <%= render "core/home_marquee" %>
@@ -37,7 +34,7 @@
   <div id="hobbies" style="height: 75vh; background-color: var(--black);">
     <div class="col-12 flex-box f-space-around">
       <div style="display: flex; flex-direction: column; align-items: center;">
-        <div class="hobby-circular-icon flex-box f-justify-center f-align-center">
+        <div class="hobby-circular-icon active flex-box f-justify-center f-align-center">
           <%= image_tag "web-icon.png", width: "55px" %>
         </div>
         <h4 style="position: relative; bottom: 15px;">Web</h4>
