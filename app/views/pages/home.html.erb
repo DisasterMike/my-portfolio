@@ -17,25 +17,41 @@
     </div>
   </div>
   <%# background: linear-gradient(#0F0F0F, #252525) %>
-  <div id="profile" style="background: #ebebeb; padding-bottom: 65px;">
+  <div id="profile" style="background: #ebebeb; padding: 65px 0 100px 0;">
     <div class="about-row row m-0">
       <%# <div class="col-12" style="height: 10vh;"></div> %>
-      <div class="col-5 flex-box f-align-center f-justify-end" style="height: 65vh; position: relative;">
+      <div class="col-5 flex-box f-align-center f-justify-end" style="position: relative;">
         <%= image_tag "me.jpg", width: "400px" %>
         <div class="about-img-back"></div>
       </div>
       <div class="col-7 flex-box f-align-center">
         <div class="about-info flex-box f-justify-center">
-          <div style="margin: 12px; border: 8px solid #e0e0e0; border-radius: 8px;">
+          <div style="margin: 12px; border: 8px solid var(--grey); border-radius: 8px;">
             <div class="text-box flex-box">
               <div class="text-box-info">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sint suscipit placeat nobis illum omnis,
-                  similique itaque velit in dignissimos sit magni ipsum vel magnam nam. Eum, doloribus quisquam. Facilis?</p>
+                <h2><%= t("about-me") %></h2>
+                <p>Hey There! I'm Michael, thanks for stopping by.<br>
+                  I am a software engineer who loves to wear many different hats. I specialize in <%= link_to "Web Development", web_path, class: "text-link" %>,
+                  but I also study <%= link_to "Game Development", games_path, class: "text-link" %> as a hobby.
+                  In addition, I love <%= link_to "Board Game Design", boardgames_path, class: "text-link" %>, as well as creating my own digital art for my projects.
+                  <br>
+                  Feel free to check out some of my work!
+                  <br>
+                  <br>
+                  I studied full stack web development at Le Wagon, Tokyo, but for Game Development I'm self taught.<br>
+                  I love learning and meeting new people.
+                  <br>
+                  <br>
+                  You're welcome to check out my Linkedin or Github below!
+                </p>
               </div>
               <div class="social-icons flex-box f-justify-center">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
+                <%= link_to "https://www.linkedin.com/in/michael-a-stump/", target: :_blank do %>
+                  <i class="fa-brands fa-linkedin"></i>
+                <% end %>
+                <%= link_to "https://github.com/DisasterMike", target: :_blank do %>
+                  <i class="fa-brands fa-github"></i>
+                <% end %>
               </div>
             </div>
           </div>
@@ -49,23 +65,24 @@
         <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon active flex-box f-justify-center f-align-center">
           <%= image_tag "web-icon.png", width: "55px" %>
         </div>
-        <h4 style="position: relative; bottom: 15px;">Web</h4>
+        <h4 style="position: relative; bottom: 15px;"><%= t("nav-web") %></h4>
       </div>
       <div style="display: flex; flex-direction: column; align-items: center;">
         <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
           <%= image_tag "unity-icon.png", width: "60px" %>
         </div>
-        <h4 style="position: relative; bottom: 15px;">Games</h4>
+        <h4 style="position: relative; bottom: 15px;"><%= t("nav-games") %></h4>
       </div>
       <div style="display: flex; flex-direction: column; align-items: center;">
         <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
           <%= image_tag "meeple-icon.png", width: "55px" %>
         </div>
-        <h4 style="position: relative; bottom: 15px;">Board Games</h4>
+        <h4 style="position: relative; bottom: 15px;"><%= t("nav-board-games") %></h4>
       </div>
     </div>
   </div>
-  <div id="socials" style="height: 75vh; background-color: var(--grey)">
+  <div id="contact" style="height: 75vh; background-color: var(--grey)">
+    <h2>(Mail me section)</h2>
   </div>
   <footer  style="height: 15vh;">
     <p>©️One2ManyHats 2024</p>
