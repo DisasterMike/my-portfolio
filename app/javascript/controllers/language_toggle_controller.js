@@ -22,7 +22,7 @@ export default class extends Controller {
   #SetToggleAfterDelay(state){
     setTimeout(() => {
       this.toggleTarget.checked = state;
-      console.log(state);
+      // console.log(state);
     }, 50);
   }
 }
