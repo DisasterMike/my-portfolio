@@ -162,9 +162,6 @@
 }
 
 .about-info{
-  // height: 50vh;
-  width: 75%;
-  // background-color: white;
   background-color: var(--white-text);
   position: relative;
   left: -20px;
@@ -172,10 +169,14 @@
   border-radius: 8px;
   box-shadow: 0 0 20px 0px #00000057;
 
+  max-width: 650px;
+
   .text-box{
-    padding: 32px;
-    height: 100%;
+    padding: 32px 32px 16px 32px;
     flex-direction: column;
+    margin: 12px;
+    border: 8px solid var(--grey);
+    border-radius: 8px;
   }
 
   .text-box-info{
