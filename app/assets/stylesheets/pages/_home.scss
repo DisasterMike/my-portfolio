@@ -135,9 +135,11 @@
 
 .hello-text{
   position: absolute;
-  top: 30px;
-  left: 260px;
+  top: 0;
+  left: 175px;
   transform: rotate(340deg);
+  height: 75px;
+  width: 360px;
 }
 
 .about-row{
@@ -181,6 +183,11 @@
 
   .text-box-info{
     flex-grow: 1;
+    padding: 16px;
+  }
+
+  p{
+    font-size: 0.9rem;
   }
 }
 
