@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="hobby-info-toggle"
 export default class extends Controller {
-  static targets = [ "button" ]
+  static targets = [ "button", "mover" ]
 
   connect() {
     // console.log("Hello from the hobby info toggle controller");
@@ -18,5 +18,7 @@ export default class extends Controller {
     event.currentTarget.classList.add("active");
 
     // Make text change under the buttons
+    console.log(this.moverTarget);
+    this.moverTarget.classList.add("board-game")
   }
 }

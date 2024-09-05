@@ -197,11 +197,6 @@
   }
 }
 
-#hobbies > div{
-  // height: 20vh;
-  padding: 0 60px;
-  background-color: var(--black);
-}
 
 .hobby-circular-icon{
   height: 100px;
@@ -221,12 +216,41 @@
   }
 }
 
+.hobbies-mover{
+  transition: transform 1s;
+  max-width: 75%;
+}
+.hobbies-mover{
+  &.web{
+    transform: translate(0, 0px);
+  }
+  &.game{
+    transform: translate(0, -449px);
+  }
+  &.board-game{
+    transform: translate(0, -898px);
+  }
+}
+
 .text-link{
   color: var(--black);
 }
 
 .text-link:hover{
   color: var(--grey);
+}
+
+.scroll-down-arrow{
+  i{
+    color: var(--white-text);
+    position: absolute;
+    bottom: 100px;
+    font-size: 2rem;
+  }
+
+  i:hover{
+    color: var(--highlight);
+  }
 }
 
 // .hobby-circular-icon:hover{
