@@ -209,23 +209,27 @@
 
   transition: all 0.5s;
 
+  &:hover{
+    background-color: var(--grey);
+  }
   &.active{
     background-color: var(--highlight);
     height: 110px;
     width: 110px;
   }
+
 }
 
 .hobbies-mover{
   transition: transform 1s;
   max-width: 75%;
-  transform: translate(0, -400px);
+  // transform: translate(0, -400px);
 }
 .hobbies-mover{
-  &.game{
+  &.web{
     transform: translate(0, 0px);
   }
-  &.web{
+  &.game{
     transform: translate(0, -400px);
   }
   &.board-game{
@@ -235,6 +239,21 @@
 
 .text-link{
   color: var(--black);
+  transition: all 0.5s;
+  text-decoration: none;
+
+  &.web{
+    color: var(--highlight);
+    font-size: 1.2rem;
+  }
+  &.games{
+    color: var(--highlight);
+    font-size: 1.2rem;
+  }
+  &.board-games{
+    color: var(--highlight);
+    font-size: 1.2rem;
+  }
 }
 
 .text-link:hover{
