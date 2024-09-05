@@ -26,21 +26,22 @@
     <%= render "core/home_about_row" %>
     <%= render "core/home_hobby_buttons" %>
   </div>
-  <div id="hobbies" style="background-color: var(--black);">
+  <a id="hobbies"></a>
+  <div style="background-color: var(--black);">
     <div class="h-container" style="padding: 40px 0;">
-      <% div_height = "50vh" %>
+      <% div_height = "400px" %>
       <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>; overflow: hidden;">
         <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
-          <div class="web-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Web stuff</h2>
+          <div class="game-hobby" style="height: <%= div_height %>; padding: 32px;">
+            <h2>Game stuff</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Eius doloribus porro provident, rem quisquam dignissimos.
               Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
               explicabo autem vel pariatur aperiam praesentium illo dicta!
             </p>
           </div>
-          <div class="game-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Game stuff</h2>
+          <div class="web-hobby" style="height: <%= div_height %>; padding: 32px;">
+            <h2>Web stuff</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Eius doloribus porro provident, rem quisquam dignissimos.
               Aliquam voluptatem dignissimos quos blanditiis dolor ratione,

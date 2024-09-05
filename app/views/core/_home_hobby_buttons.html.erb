@@ -1,18 +1,18 @@
 <div class="col-12 flex-box f-space-around" style="background-color: var(--black); margin-top: 100px; height: 20vh;">
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon active flex-box f-justify-center f-align-center">
-      <%= image_tag "web-icon.png", width: "55px" %>
-    </div>
-    <h4 style="position: relative; bottom: 15px;"><%= t("nav-web") %></h4>
-  </div>
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
+    <div data-hobby="game" data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
       <%= image_tag "unity-icon.png", width: "60px" %>
     </div>
     <h4 style="position: relative; bottom: 15px;"><%= t("nav-games") %></h4>
   </div>
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
+    <div data-hobby="web" data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon active flex-box f-justify-center f-align-center">
+      <%= image_tag "web-icon.png", width: "55px" %>
+    </div>
+    <h4 style="position: relative; bottom: 15px;"><%= t("nav-web") %></h4>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <div data-hobby="board" data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
       <%= image_tag "meeple-icon.png", width: "55px" %>
     </div>
     <h4 style="position: relative; bottom: 15px;"><%= t("nav-board-games") %></h4>

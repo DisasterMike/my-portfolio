@@ -219,16 +219,17 @@
 .hobbies-mover{
   transition: transform 1s;
   max-width: 75%;
+  transform: translate(0, -400px);
 }
 .hobbies-mover{
-  &.web{
+  &.game{
     transform: translate(0, 0px);
   }
-  &.game{
-    transform: translate(0, -449px);
+  &.web{
+    transform: translate(0, -400px);
   }
   &.board-game{
-    transform: translate(0, -898px);
+    transform: translate(0, -800px);
   }
 }
 
