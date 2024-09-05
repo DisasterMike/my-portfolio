@@ -1,4 +1,4 @@
-<div class="home-top">
+<div data-controller="hobby-info-toggle" class="home-top">
   <header style="height: 10vh">
     <div class="wrapper">
       <%= render "core/language_toggle" %>
@@ -7,73 +7,29 @@
   <%= render "core/navbar" %>
   <div data-controller="logo-letters" class="banner" style="height: 83vh">
     <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
-      <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1;">
+      <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column;">
         <div class="banner-logo flex-box f-align-end">
           <h3 class="hello-text">👇🏻 <%= t("logo-click-me") %></h3>
           <%= render "core/logo_banner" %>
+        </div>
+        <div class="scroll-down-arrow">
+          <%= link_to "#profile" do %>
+            <i class="fa-solid fa-angle-down" style="color: var(--white-text);
+                position: absolute;
+                bottom: 100px;
+                font-size: 2rem;">
+            </i>
+          <% end %>
         </div>
       </div>
       <%= render "core/home_marquee" %>
     </div>
   </div>
-  <div id="profile" style="background: #ebebeb; padding: 65px 0 100px 0;">
-    <div class="about-row flex-box f-justify-center">
-      <div class="flex-box f-align-center f-justify-end">
-        <%= image_tag "me.jpg", width: "400px" %>
-        <div class="about-img-back"></div>
-      </div>
-      <div class="about-info flex-box">
-        <div class="text-box flex-box">
-          <div class="text-box-info">
-            <h2><%= t("about-me") %></h2>
-            <p>Hey There! I'm Michael, thanks for stopping by.<br>
-              I am a software engineer who loves to wear many different hats. I specialize in <%= link_to "Web Development", web_path, class: "text-link" %>,
-              but I also study <%= link_to "Game Development", games_path, class: "text-link" %> as a hobby.
-              In addition, I love <%= link_to "Board Game Design", boardgames_path, class: "text-link" %>, as well as creating my own digital art for my projects.
-              <br>
-              Feel free to check out some of my work!
-              <br>
-              <br>
-              I studied full stack web development at Le Wagon, Tokyo, but for Game Development I'm self taught.<br>
-              I love learning and meeting new people.
-              <br>
-              <br>
-              You're welcome to check out my Linkedin or Github below!
-            </p>
-          </div>
-          <div class="social-icons flex-box f-justify-center">
-            <%= link_to "https://www.linkedin.com/in/michael-a-stump/", target: :_blank do %>
-              <i class="fa-brands fa-linkedin"></i>
-            <% end %>
-            <%= link_to "https://github.com/DisasterMike", target: :_blank do %>
-              <i class="fa-brands fa-github"></i>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="profile" style="background: #ebebeb; padding: 65px 0 0 0;">
+    <%= render "core/home_about_row" %>
+    <%= render "core/home_hobby_buttons" %>
   </div>
-  <div data-controller="hobby-info-toggle" id="hobbies" style="height: 75vh; background-color: var(--black);">
-    <div class="col-12 flex-box f-space-around">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon active flex-box f-justify-center f-align-center">
-          <%= image_tag "web-icon.png", width: "55px" %>
-        </div>
-        <h4 style="position: relative; bottom: 15px;"><%= t("nav-web") %></h4>
-      </div>
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
-          <%= image_tag "unity-icon.png", width: "60px" %>
-        </div>
-        <h4 style="position: relative; bottom: 15px;"><%= t("nav-games") %></h4>
-      </div>
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <div data-action="mouseenter->hobby-info-toggle#hover" data-hobby-info-toggle-target="button" class="hobby-circular-icon flex-box f-justify-center f-align-center">
-          <%= image_tag "meeple-icon.png", width: "55px" %>
-        </div>
-        <h4 style="position: relative; bottom: 15px;"><%= t("nav-board-games") %></h4>
-      </div>
-    </div>
+  <div id="hobbies" style="height: 75vh; background-color: var(--black);">
   </div>
   <div id="contact" style="height: 75vh; background-color: var(--grey)">
     <h2>(Mail me section)</h2>
