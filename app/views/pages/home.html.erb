@@ -1,4 +1,4 @@
-<div data-controller="hobby-info-toggle" class="home-top">
+<div data-controller="hobby-info-toggle" id="home-top">
   <header style="height: 10vh">
     <div class="wrapper">
       <%= render "core/language_toggle" %>
@@ -9,16 +9,14 @@
     <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
       <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column;">
         <div class="banner-logo flex-box f-align-end">
-          <h3 class="hello-text">👇🏻 <%= t("logo-click-me") %></h3>
+          <div class="hello-text flex-box f-justify-center f-align-center">
+            <h3>👇🏻 <%= t("logo-click-me") %></h3>
+          </div>
           <%= render "core/logo_banner" %>
         </div>
         <div class="scroll-down-arrow">
           <%= link_to "#profile" do %>
-            <i class="fa-solid fa-angle-down" style="color: var(--white-text);
-                position: absolute;
-                bottom: 100px;
-                font-size: 2rem;">
-            </i>
+            <i class="fa-solid fa-angle-down"></i>
           <% end %>
         </div>
       </div>
@@ -29,12 +27,49 @@
     <%= render "core/home_about_row" %>
     <%= render "core/home_hobby_buttons" %>
   </div>
-  <div id="hobbies" style="height: 75vh; background-color: var(--black);">
+  <a id="hobbies"></a>
+  <div style="background-color: var(--black);">
+    <div class="h-container" style="padding: 40px 0;">
+      <% div_height = "400px" %>
+      <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>; overflow: hidden;">
+        <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
+          <div class="web-hobby" style="height: <%= div_height %>; padding: 32px;">
+            <h2>Web stuff</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Eius doloribus porro provident, rem quisquam dignissimos.
+              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
+              explicabo autem vel pariatur aperiam praesentium illo dicta!
+            </p>
+          </div>
+          <div class="game-hobby" style="height: <%= div_height %>; padding: 32px;">
+            <h2>Game stuff</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Eius doloribus porro provident, rem quisquam dignissimos.
+              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
+              explicabo autem vel pariatur aperiam praesentium illo dicta!
+            </p>
+          </div>
+          <div class="board-game-hobby" style="height: <%= div_height %>; padding: 32px;">
+            <h2>Board Game stuff</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Eius doloribus porro provident, rem quisquam dignissimos.
+              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
+              explicabo autem vel pariatur aperiam praesentium illo dicta!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="contact" style="height: 75vh; background-color: var(--grey)">
     <h2>(Mail me section)</h2>
+    <div class="scroll-up-arrow">
+      <%= link_to "#home-top" do %>
+        <i class="fa-solid fa-angle-up"></i>
+      <% end %>
+    </div>
   </div>
-  <footer  style="height: 15vh;">
+  <footer style="height: 15vh;">
     <p>©️One2ManyHats 2024</p>
     <div>
       <p></p>
