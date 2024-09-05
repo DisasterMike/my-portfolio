@@ -1,0 +1,35 @@
+<div class="about-row flex-box f-justify-center">
+  <div class="flex-box f-align-center f-justify-end">
+    <%= image_tag "me.jpg", width: "400px" %>
+    <div class="about-img-back"></div>
+  </div>
+  <div class="about-info flex-box">
+    <div class="text-box flex-box">
+      <div class="text-box-info">
+        <h2><%= t("about-me") %></h2>
+        <p>Hey There! I'm Michael, thanks for stopping by.<br>
+          I am a software engineer who loves to wear many different hats. I specialize in <%= link_to "Web Development", web_path, class: "text-link" %>,
+          but I also study <%= link_to "Game Development", games_path, class: "text-link" %> as a hobby.
+          In addition, I love <%= link_to "Board Game Design", boardgames_path, class: "text-link" %>, as well as creating my own digital art for my projects.
+          <br>
+          Feel free to check out some of my work!
+          <br>
+          <br>
+          I studied full stack web development at Le Wagon, Tokyo, but for Game Development I'm self taught.<br>
+          I love learning and meeting new people.
+          <br>
+          <br>
+          You're welcome to check out my Linkedin or Github below!
+        </p>
+      </div>
+      <div class="social-icons flex-box f-justify-center">
+        <%= link_to "https://www.linkedin.com/in/michael-a-stump/", target: :_blank do %>
+          <i class="fa-brands fa-linkedin"></i>
+        <% end %>
+        <%= link_to "https://github.com/DisasterMike", target: :_blank do %>
+          <i class="fa-brands fa-github"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
