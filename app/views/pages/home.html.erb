@@ -29,34 +29,34 @@
   </div>
   <a id="hobbies"></a>
   <div style="background-color: var(--black);">
-    <div class="h-container" style="padding: 40px 0;">
-      <% div_height = "400px" %>
+    <div class="h-container" style="padding: 20px 0 80px 0;">
+      <% div_height = "350px" %>
       <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>; overflow: hidden;">
         <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
-          <div class="web-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Web stuff</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Eius doloribus porro provident, rem quisquam dignissimos.
-              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
-              explicabo autem vel pariatur aperiam praesentium illo dicta!
-            </p>
-          </div>
-          <div class="game-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Game stuff</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Eius doloribus porro provident, rem quisquam dignissimos.
-              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
-              explicabo autem vel pariatur aperiam praesentium illo dicta!
-            </p>
-          </div>
-          <div class="board-game-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Board Game stuff</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Eius doloribus porro provident, rem quisquam dignissimos.
-              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
-              explicabo autem vel pariatur aperiam praesentium illo dicta!
-            </p>
-          </div>
+          <% web_title = "Web Stuff" %>
+          <% web_desc =
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Eius doloribus porro provident, rem quisquam dignissimos.
+            Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
+            explicabo autem vel pariatur aperiam praesentium illo dicta!"
+          %>
+          <%= render "core/left_hobby_card", title: web_title, desc: web_desc, div_height: div_height,  image: "url('https://image.api.playstation.com/cdn/UP0002/CUSA12125_00/BKB7gqk3YJvlXkwLCBIC4PkuXkfy2Hg4.png')" %>
+          <% games_title = "Games Stuff" %>
+          <% games_desc =
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Eius doloribus porro provident, rem quisquam dignissimos.
+            Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
+            explicabo autem vel pariatur aperiam praesentium illo dicta!"
+          %>
+          <%= render "core/right_hobby_card", title: games_title, desc: games_desc, div_height: div_height,  image: "url('https://image.api.playstation.com/cdn/UP0002/CUSA12125_00/BKB7gqk3YJvlXkwLCBIC4PkuXkfy2Hg4.png')" %>
+          <% board_game_title = "Board Game Stuff" %>
+          <% board_game_desc =
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Eius doloribus porro provident, rem quisquam dignissimos.
+            Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
+            explicabo autem vel pariatur aperiam praesentium illo dicta!"
+          %>
+          <%= render "core/left_hobby_card", title: board_game_title, desc: board_game_desc, div_height: div_height,  image: "url('https://image.api.playstation.com/cdn/UP0002/CUSA12125_00/BKB7gqk3YJvlXkwLCBIC4PkuXkfy2Hg4.png')" %>
         </div>
       </div>
     </div>
