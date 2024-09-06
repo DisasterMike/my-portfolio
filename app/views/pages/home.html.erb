@@ -29,34 +29,34 @@
   </div>
   <a id="hobbies"></a>
   <div style="background-color: var(--black);">
-    <div class="h-container" style="padding: 40px 0;">
-      <% div_height = "400px" %>
+    <div class="h-container" style="padding: 20px 0 80px 0;">
+      <% div_height = "350px" %>
       <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>; overflow: hidden;">
         <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
-          <div class="web-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Web stuff</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Eius doloribus porro provident, rem quisquam dignissimos.
-              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
-              explicabo autem vel pariatur aperiam praesentium illo dicta!
-            </p>
-          </div>
-          <div class="game-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Game stuff</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Eius doloribus porro provident, rem quisquam dignissimos.
-              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
-              explicabo autem vel pariatur aperiam praesentium illo dicta!
-            </p>
-          </div>
-          <div class="board-game-hobby" style="height: <%= div_height %>; padding: 32px;">
-            <h2>Board Game stuff</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Eius doloribus porro provident, rem quisquam dignissimos.
-              Aliquam voluptatem dignissimos quos blanditiis dolor ratione,
-              explicabo autem vel pariatur aperiam praesentium illo dicta!
-            </p>
-          </div>
+          <% web_title = "Web Development" %>
+          <% web_desc =
+            "\"I specialize in full stack web development, with a love for creating interesting designs and animations.
+            I have experience in various front-end and back-end technologies, such as HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and more.
+            Next I want to explore some different front end frame works such as React.\""
+          %>
+          <% page_link = web_path %>
+          <%= render "core/left_hobby_card", title: web_title, desc: web_desc, div_height: div_height, page_link: page_link,  image: image_path("AnimePanda1.png") %>
+          <% games_title = "Games Development" %>
+          <% games_desc =
+            "\"In my free time, I love to create video games using the Unity Engine.
+            Over the years, I have made various small to medium projects, which have really helped me to hone my programming skills, such as understanding the importance of scalability and clean clode.
+            It's quite the challenge being a solo developer, but I love every second of it!.\""
+          %>
+          <% page_link = games_path %>
+          <%= render "core/right_hobby_card", title: games_title, desc: games_desc, div_height: div_height, page_link: page_link,  image: image_path("A_Light_Touch_GIF.gif") %>
+          <% board_game_title = "Board Game Design" %>
+          <% board_game_desc =
+            "\"A few years back, I found a love for board games, and have been designing a few of my own.
+            This has really helped me flex my creative muscles and develop my artistic skills. I believe board games have a huge importance on UX and UI design,
+            which can be quite a challenging, but very rewarding experience.\""
+          %>
+          <% page_link = boardgames_path %>
+          <%= render "core/left_hobby_card", title: board_game_title, desc: board_game_desc, div_height: div_height, page_link: page_link,  image: image_path("angry_octopus.png") %>
         </div>
       </div>
     </div>
