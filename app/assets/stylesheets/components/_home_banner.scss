@@ -1,3 +1,7 @@
+.banner{
+  height: 90vh;
+}
+
 .banner-logo{
   position: relative;
 
@@ -135,7 +139,7 @@
 //
 //
 
-@media (max-width: 992px){
+@media (max-width: 1024px){
   .banner-logo{
     h2{
       font-size: 4.4rem;
@@ -184,6 +188,10 @@
 }
 
 @media (max-width: 768px){
+  .banner{
+    height: 75vh;
+  }
+
   .banner-logo{
     // .logo-image{
     //   width: 200px;
@@ -203,6 +211,20 @@
     }
     .hello-text{
       display: none;
+    }
+  }
+}
+
+
+@media (max-width: 480px){
+  .banner{
+    height: 75vh;
+  }
+
+  .banner-logo{
+    .logo-image{
+      width: 300px;
+      margin: 0;
     }
   }
 }
