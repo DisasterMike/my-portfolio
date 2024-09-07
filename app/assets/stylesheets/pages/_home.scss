@@ -6,6 +6,7 @@
     transform: rotate(353deg);
     border: 10px solid white;
     filter: grayscale(100%);
+    width: 400px;
   }
 
   .about-img-back{
@@ -101,29 +102,34 @@
 
 .hobbies-info{
   overflow: hidden;
+  height: 350px;
 }
 
 .hobby-card{
   padding: 32px;
+  height: 350px;
+}
 
-  .hobby-card-picture{
-    height: 100%;
-    min-width: 250px;
-    background-size: cover;
-    // background-position: center;
-    border-radius: 8px;
-    border: 2px solid var(--grey);
-  }
-  .hobby-card-info{
-    padding: 32px;
-  }
-  .hobby-card-info a{
-    text-decoration: none; color: var(--white-text);
-    width: fit-content;
-  }
-  .hobby-card-info a:hover{
-    color: var(--highlight);
-  }
+.hobby-card-picture{
+  height: 100%;
+  min-width: 250px;
+  background-size: cover;
+  // background-position: center;
+  border-radius: 8px;
+  border: 2px solid var(--grey);
+}
+
+.hobby-card-info{
+  padding: 32px;
+}
+
+.hobby-card-info a{
+  text-decoration: none; color: var(--white-text);
+  width: fit-content;
+}
+
+.hobby-card-info a:hover{
+  color: var(--highlight);
 }
 
 .text-link{
@@ -166,3 +172,91 @@
 // Media queries
 //
 //
+
+@media (max-width: 992px){
+  .hobbies-info{
+    height: 320px;
+  }
+
+  .hobby-card{
+    height: 320px;
+  }
+
+  .hobbies-mover{
+    &.web{
+      transform: translate(0, 0px);
+    }
+    &.game{
+      transform: translate(0, -320px);
+    }
+    &.board-game{
+      transform: translate(0, -640px);
+    }
+  }
+
+  .hobby-card{
+    padding: 16px;
+  }
+
+  .hobby-card-info{
+    padding: 16px;
+
+    h2{
+      font-size: 1.5rem;
+    }
+
+    p{
+      font-size: 0.9rem;
+    }
+  }
+
+  .about-row{
+    img{
+      width: 330px;
+    }
+
+    .about-img-back{
+      width: 330px;
+      height: 330px;
+    }
+  }
+
+  .about-info{
+    max-width: 500px;
+
+    .text-box{
+      padding: 16px 16px 8px 16px;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
+
+    p{
+      font-size: 0.8rem;
+    }
+  }
+
+  .text-link{
+    &.web{
+      font-size: 1rem;
+    }
+    &.games{
+      font-size: 1rem;
+    }
+    &.board-games{
+      font-size: 1rem;
+    }
+  }
+
+  .hobby-circular-icon{
+    height: 90px;
+    width: 90px;
+
+    &.active{
+      height: 100px;
+      width: 100px;
+    }
+
+  }
+}

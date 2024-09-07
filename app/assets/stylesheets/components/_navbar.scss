@@ -75,5 +75,33 @@
     li{
       font-size: 1rem;
     }
+
+    ul{
+      gap: 100px;
+    }
+  }
+
+  .sticking-nav{
+    ul{
+      gap: 70px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .main-nav-inner{
+    li{
+      font-size: 1rem;
+    }
+
+    ul{
+      gap: 70px;
+    }
+  }
+
+  .sticking-nav{
+    ul{
+      gap: 60px;
+    }
   }
 }

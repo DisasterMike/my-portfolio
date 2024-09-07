@@ -35,11 +35,10 @@
   </div>
   <div id="hobbies" style="background-color: var(--black);">
     <div class="h-container" style="padding: 20px 0 80px 0;">
-      <% div_height = "350px" %>
-      <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>;">
+      <div class="hobbies-info flex-box f-justify-center">
         <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
           <!-- Web Development Card -->
-          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+          <div class="hobby-card flex-box">
             <div class="hobby-card-picture" style="background-image: url('<%= image_path("AnimePanda1.png") %>');">
             </div>
             <div class="hobby-card-info flex-box d-flex-column">
@@ -54,7 +53,7 @@
             </div>
           </div>
           <!-- Game Development Card -->
-          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+          <div class="hobby-card flex-box">
             <div class="hobby-card-info flex-box d-flex-column">
               <%= link_to web_path do %>
                 <h2><%= t("nav-games") %></h2>
@@ -69,7 +68,7 @@
             </div>
           </div>
           <!-- Board Game Card -->
-          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+          <div class="hobby-card flex-box">
             <div class="hobby-card-picture" style="background-image: url('<%= image_path("angry_octopus.png") %>');">
             </div>
             <div class="hobby-card-info flex-box d-flex-column">
