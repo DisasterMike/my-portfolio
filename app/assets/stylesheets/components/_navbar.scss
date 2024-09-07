@@ -70,7 +70,7 @@
 //
 //
 
-@media (max-width: 992px){
+@media (max-width: 1024px){
   .main-nav-inner{
     li{
       font-size: 1.1rem;
@@ -116,6 +116,24 @@
 
     ul{
       gap: 45px;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .main-nav-inner{
+    ul{
+      gap: 60px;
+    }
+  }
+
+  .nav-items{
+    p{
+      display: none;
+    }
+
+    i{
+      font-size: 1.5rem;
     }
   }
 }
