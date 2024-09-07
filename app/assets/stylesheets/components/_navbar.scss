@@ -73,7 +73,49 @@
 @media (max-width: 992px){
   .main-nav-inner{
     li{
+      font-size: 1.1rem;
+    }
+
+    ul{
+      gap: 100px;
+    }
+  }
+
+  .sticking-nav{
+    ul{
+      gap: 70px;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .main-nav-inner{
+    padding: 0 25px;
+
+    li{
       font-size: 1rem;
+    }
+
+    ul{
+      gap: 65px;
+    }
+  }
+
+  .sticking-nav{
+    ul{
+      gap: 60px;
+    }
+  }
+}
+
+@media (max-width: 550px){
+  .main-nav-inner{
+    li{
+      font-size: 0.9rem;
+    }
+
+    ul{
+      gap: 45px;
     }
   }
 }

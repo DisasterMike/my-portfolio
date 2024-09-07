@@ -35,16 +35,15 @@
   </div>
   <div id="hobbies" style="background-color: var(--black);">
     <div class="h-container" style="padding: 20px 0 80px 0;">
-      <% div_height = "350px" %>
-      <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>;">
+      <div class="hobbies-info flex-box f-justify-center">
         <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
           <!-- Web Development Card -->
-          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+          <div class="hobby-card flex-box">
             <div class="hobby-card-picture" style="background-image: url('<%= image_path("AnimePanda1.png") %>');">
             </div>
             <div class="hobby-card-info flex-box d-flex-column">
               <%= link_to web_path do %>
-                <h2>Web Development</h2>
+                <h2><%= t("nav-web") %></h2>
               <% end %>
               <p>
                 "I specialize in full stack web development, with a love for creating interesting designs and animations.
@@ -54,10 +53,10 @@
             </div>
           </div>
           <!-- Game Development Card -->
-          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+          <div class="hobby-card flex-box">
             <div class="hobby-card-info flex-box d-flex-column">
               <%= link_to web_path do %>
-                <h2>Games Development</h2>
+                <h2><%= t("nav-games") %></h2>
               <% end %>
               <p>
                 "In my free time, I love to create video games using the Unity Engine.
@@ -69,12 +68,12 @@
             </div>
           </div>
           <!-- Board Game Card -->
-          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+          <div class="hobby-card flex-box">
             <div class="hobby-card-picture" style="background-image: url('<%= image_path("angry_octopus.png") %>');">
             </div>
             <div class="hobby-card-info flex-box d-flex-column">
               <%= link_to web_path do %>
-                <h2>Board Game Design</h2>
+                <h2><%= t("nav-board-games") %></h2>
               <% end %>
               <p>
                 "A few years back, I found a love for board games, and have been designing a few of my own.
