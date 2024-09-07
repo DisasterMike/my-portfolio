@@ -1,21 +1,24 @@
 <div data-controller="hobby-info-toggle" id="home-top">
+  <!--
+    Banner Section
+  -->
   <header style="height: 10vh">
     <div class="wrapper">
       <%= render "core/language_toggle" %>
     </div>
   </header>
   <%= render "core/navbar" %>
-  <div data-controller="logo-letters" class="banner" style="height: 83vh">
+  <div data-controller="logo-letters" class="banner" style="height: 90vh">
     <div class="flex-box f-justify-end" style="height: 100%; flex-direction: column;">
-      <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column;">
+      <div class="flex-box f-justify-center f-align-center" style="flex-grow: 1; flex-direction: column; padding-top: 130px">
         <div class="banner-logo flex-box f-align-end">
           <div class="hello-text flex-box f-justify-center f-align-center">
             <h3>👇🏻 <%= t("logo-click-me") %></h3>
           </div>
           <%= render "core/logo_banner" %>
         </div>
-        <div class="scroll-down-arrow">
-          <%= link_to "#profile" do %>
+        <div class="scroll-down-arrow" style="position: relative;">
+          <%= link_to "#about" do %>
             <i class="fa-solid fa-angle-down"></i>
           <% end %>
         </div>
@@ -23,45 +26,71 @@
       <%= render "core/home_marquee" %>
     </div>
   </div>
-  <div id="profile" style="background: #ebebeb; padding: 65px 0 0 0;">
+  <!--
+    Profile Section
+  -->
+  <div id="about" style="background: #ebebeb; padding: 65px 0 0 0;">
     <%= render "core/home_about_row" %>
     <%= render "core/home_hobby_buttons" %>
   </div>
-  <a id="hobbies"></a>
-  <div style="background-color: var(--black);">
+  <div id="hobbies" style="background-color: var(--black);">
     <div class="h-container" style="padding: 20px 0 80px 0;">
       <% div_height = "350px" %>
-      <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>; overflow: hidden;">
+      <div class="hobbies-info flex-box f-justify-center" style="height: <%= div_height %>;">
         <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
-          <% web_title = "Web Development" %>
-          <% web_desc =
-            "\"I specialize in full stack web development, with a love for creating interesting designs and animations.
-            I have experience in various front-end and back-end technologies, such as HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and more.
-            Next I want to explore some different front end frame works such as React.\""
-          %>
-          <% page_link = web_path %>
-          <%= render "core/left_hobby_card", title: web_title, desc: web_desc, div_height: div_height, page_link: page_link,  image: image_path("AnimePanda1.png") %>
-          <% games_title = "Games Development" %>
-          <% games_desc =
-            "\"In my free time, I love to create video games using the Unity Engine.
-            Over the years, I have made various small to medium projects, which have really helped me to hone my programming skills, such as understanding the importance of scalability and clean clode.
-            It's quite the challenge being a solo developer, but I love every second of it!.\""
-          %>
-          <% page_link = games_path %>
-          <%= render "core/right_hobby_card", title: games_title, desc: games_desc, div_height: div_height, page_link: page_link,  image: image_path("A_Light_Touch_GIF.gif") %>
-          <% board_game_title = "Board Game Design" %>
-          <% board_game_desc =
-            "\"A few years back, I found a love for board games, and have been designing a few of my own.
-            This has really helped me flex my creative muscles and develop my artistic skills. I believe board games have a huge importance on UX and UI design,
-            which can be quite a challenging, but very rewarding experience.\""
-          %>
-          <% page_link = boardgames_path %>
-          <%= render "core/left_hobby_card", title: board_game_title, desc: board_game_desc, div_height: div_height, page_link: page_link,  image: image_path("angry_octopus.png") %>
+          <!-- Web Development Card -->
+          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+            <div class="hobby-card-picture" style="background-image: url('<%= image_path("AnimePanda1.png") %>');">
+            </div>
+            <div class="hobby-card-info flex-box d-flex-column">
+              <%= link_to web_path do %>
+                <h2>Web Development</h2>
+              <% end %>
+              <p>
+                "I specialize in full stack web development, with a love for creating interesting designs and animations.
+                I have experience in various front-end and back-end technologies, such as HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and more.
+                Next I want to explore some different frame works such as React."
+              </p>
+            </div>
+          </div>
+          <!-- Game Development Card -->
+          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+            <div class="hobby-card-info flex-box d-flex-column">
+              <%= link_to web_path do %>
+                <h2>Games Development</h2>
+              <% end %>
+              <p>
+                "In my free time, I love to create video games using the Unity Engine.
+                Over the years, I have made various small to medium projects, which have really helped me to hone my programming skills, such as understanding the importance of scalability and clean clode.
+                It's quite the challenge being a solo developer, but I love every second of it!.""
+              </p>
+            </div>
+            <div class="hobby-card-picture" style="background-image: url('<%= image_path("A_Light_Touch_GIF.gif") %>'); background-position: center;">
+            </div>
+          </div>
+          <!-- Board Game Card -->
+          <div class="hobby-card flex-box" style="height: <%= div_height %>;">
+            <div class="hobby-card-picture" style="background-image: url('<%= image_path("angry_octopus.png") %>');">
+            </div>
+            <div class="hobby-card-info flex-box d-flex-column">
+              <%= link_to web_path do %>
+                <h2>Board Game Design</h2>
+              <% end %>
+              <p>
+                "A few years back, I found a love for board games, and have been designing a few of my own.
+                This has really helped me flex my creative muscles and develop my artistic skills. I believe board games have a huge importance on UX and UI design,
+                which can be quite a challenging, but very rewarding experience.\"
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="contact" style="height: 75vh; background-color: var(--grey)">
+  <!--
+    Contact Section
+  -->
+  <div id="contact" style="height: 50vh; background-color: var(--grey)">
     <h2>(Mail me section)</h2>
     <div class="scroll-up-arrow">
       <%= link_to "#home-top" do %>

@@ -1,0 +1,179 @@
+.banner-logo{
+  position: relative;
+
+  h2{
+    font-size: 6.5rem;
+    letter-spacing: -3px;
+    transition: all 0.6s;
+    -webkit-transition: all 0.3s;
+    font-family: var(--logo-font);
+  }
+
+  .static-letter{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+  }
+
+  .moving-letter{
+    position: absolute;
+  }
+
+  .l2{
+    left: 69px;
+  }
+  .l3{
+    left: 124px;
+  }
+  .l5{
+    left: 87px;
+  }
+  .l6{
+    left: 140px;
+  }
+  .l7{
+    left: 197px;
+  }
+  .l8{
+    left: 245px;
+  }
+  .l9{
+    left: 315px;
+  }
+  .l10{
+    left: 368px;
+  }
+  .l11{
+    left: 399px;
+  }
+
+  .moving-letter:hover{
+    color: transparent;
+    text-shadow: 5px -5px 0px rgb(255, 255, 255);
+  }
+  .l1:hover{
+    text-shadow: 5px -5px 0px green;
+  }
+  .l2:hover{
+    text-shadow: 5px -5px 0px yellow;
+  }
+  .l3:hover{
+    text-shadow: 5px -5px 0px rgb(226, 10, 10);
+  }
+  .l4:hover{
+    text-shadow: 5px -5px 0px lightblue;
+  }
+  .l5:hover{
+    text-shadow: 5px -5px 0px orange;
+  }
+  .l6:hover{
+    text-shadow: 5px -5px 0px purple;
+  }
+  .l7:hover{
+    text-shadow: 5px -5px 0px pink;
+  }
+  .l8:hover{
+    text-shadow: 5px -5px 0px rgb(10, 10, 231);
+  }
+  .l9:hover{
+    text-shadow: 5px -5px 0px lightgoldenrodyellow;
+  }
+  .l10:hover{
+    text-shadow: 5px -5px 0px lightcyan;
+  }
+  .l11:hover{
+    text-shadow: 5px -5px 0px lightsalmon;
+  }
+  .moving-letter:hover{
+    color: transparent;
+    text-shadow: 5px -5px 0px var(--highlight);
+  }
+  .letter-buttons{
+    position: absolute;
+    color: transparent;
+    text-shadow: 5px -5px 0px rgb(255, 255, 255);
+  }
+  .letter-buttons:hover{
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+  }
+
+  .left-words{
+    position: relative;
+    left: 105px;
+    bottom: 29px;
+    z-index: 3;
+  }
+
+  .right-words{
+    position: relative;
+    right: 115px;
+    bottom: 29px;
+    z-index: 3;
+  }
+
+  .logo-image{
+    width: 380px;
+    transition: all 0.6s;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
+    top: -6px;
+    z-index: 2;
+  }
+}
+
+.hello-text{
+  position: absolute;
+  top: 0;
+  left: 175px;
+  transform: rotate(340deg);
+  height: 75px;
+  width: 360px;
+}
+
+// Media queries
+//
+//
+
+@media (max-width: 992px){
+  .banner-logo{
+    h2{
+      font-size: 4.4rem;
+    }
+
+    .l2{
+      left: 51px;
+    }
+    .l3{
+      left: 89px;
+    }
+    .l5{
+      left: 63px;
+    }
+    .l6{
+      left: 96px;
+    }
+    .l7{
+      left: 134px;
+    }
+    .l8{
+      left: 167px;
+    }
+    .l9{
+      left: 216px;
+    }
+    .l10{
+      left: 250px;
+    }
+    .l11{
+      left: 272px;
+    }
+
+
+    .logo-image{
+      width: 260px;
+      margin: 0 41px;
+      top: -11px;
+    }
+  }
+}

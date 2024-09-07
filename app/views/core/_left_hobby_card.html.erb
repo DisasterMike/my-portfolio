@@ -1,10 +1,8 @@
-<div class="web-hobby flex-box" style="height: <%= div_height %>; padding: 32px;">
-  <div style="height: 100%; min-width: 250px; background-image: url('<%= image %>');
-              background-size: cover;
-              border-radius: 8px;">
+<div class="hobby-card flex-box" style="height: <%= div_height %>;">
+  <div class="hobby-card-picture" style="background-image: url('<%= image %>');">
   </div>
-  <div class="flex-box d-flex-column" style="padding: 32px;">
-    <%= link_to page_link, style: "text-decoration: none; color: var(--white-text);" do %>
+  <div class="hobby-card-info flex-box d-flex-column">
+    <%= link_to page_link do %>
       <h2><%= title %></h2>
     <% end %>
     <p><%= desc %>
