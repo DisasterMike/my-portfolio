@@ -119,6 +119,10 @@
   }
   .hobby-card-info a{
     text-decoration: none; color: var(--white-text);
+    width: fit-content;
+  }
+  .hobby-card-info a:hover{
+    color: var(--highlight);
   }
 }
 
