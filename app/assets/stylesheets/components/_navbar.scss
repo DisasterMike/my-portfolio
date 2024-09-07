@@ -1,5 +1,5 @@
 .nav-wrapper{
-  padding-top: 16px;
+  // padding-top: 16px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -37,7 +37,7 @@
 
 .sticking-nav{
   position: fixed;
-  top: 0;
+  top: 16px;
   z-index: 10;
   width: fit-content;
 
