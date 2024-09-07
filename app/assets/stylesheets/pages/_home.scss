@@ -7,7 +7,6 @@
     transition: all 0.6s;
     -webkit-transition: all 0.3s;
     font-family: var(--logo-font);
-    // text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
   }
 
   .static-letter{
@@ -98,11 +97,6 @@
     text-shadow: 0px 0px 0px rgb(255, 255, 255);
   }
 
-  // .moving-letter:hover + .static-letter{
-  //   -webkit-text-stroke-width: 3px;
-  //   -webkit-text-stroke-color: white;
-  // }
-
   .left-words{
     position: relative;
     left: 105px;
@@ -116,11 +110,6 @@
     bottom: 29px;
     z-index: 3;
   }
-
-  // img {
-  //   -webkit-filter: drop-shadow(5px -5px 0px #949494);
-  //   filter: drop-shadow(5px -5px 0px #949494);
-  // }
 
   .logo-image{
     width: 380px;
@@ -230,7 +219,6 @@
 .hobbies-mover{
   transition: transform 1s;
   max-width: 75%;
-  // transform: translate(0, -400px);
 }
 .hobbies-mover{
   &.web{
@@ -271,7 +259,7 @@
   i{
     color: var(--white-text);
     position: absolute;
-    bottom: 100px;
+    top: 25px;
     font-size: 2rem;
   }
 
@@ -280,14 +268,10 @@
   }
 }
 
-// .hobby-circular-icon:hover{
-//   background-color: var(--highlight);
-//   height: 110px;
-//   width: 110px;
-// }
 
-
-
+// Media queries
+//
+//
 
 @media (max-width: 992px){
   .banner-logo{

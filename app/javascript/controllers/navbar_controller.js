@@ -13,10 +13,8 @@ export default class extends Controller {
     scrollWatcher.setAttribute("data-scroll-watcher", "");
     this.mainNavTarget.before(scrollWatcher);
 
-    const navHeight = this.mainNavTarget.offsetHeight;
-    // console.log(navHeight);
-    // const observerMarginValues = `${navHeight}px 0px 0px 0px`
-    const observerMarginValues = `${10}px 0px 0px 0px`
+    // add a buffer before the nav goes to fixed
+    const observerMarginValues = `${20}px 0px 0px 0px`
 
     //
     const navObserver = new IntersectionObserver((entries) => {
