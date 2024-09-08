@@ -29,12 +29,12 @@
   <!--
     Profile Section
   -->
-  <div id="about" style="background: #ebebeb; padding: 65px 0 0 0;">
+  <div id="about" style="background: var(--grey-back); padding: 65px 0 0 0;">
     <%= render "core/home_about_row" %>
     <%= render "core/home_hobby_buttons" %>
   </div>
   <div id="hobbies" style="background-color: var(--black);">
-    <div class="h-container" style="padding: 20px 0 80px 0;">
+    <div class="h-container" style="padding: 20px 0 125px 0;">
       <div class="hobbies-info flex-box f-justify-center">
         <div data-hobby-info-toggle-target="mover" class="hobbies-mover">
           <!-- Web Development Card -->
@@ -78,7 +78,7 @@
               <p>
                 "A few years back, I found a love for board games, and have been designing a few of my own.
                 This has really helped me flex my creative muscles and develop my artistic skills. I believe board games have a huge importance on UX and UI design,
-                which can be quite a challenging, but very rewarding experience.\"
+                which can be quite a challenging, but very rewarding experience."
               </p>
             </div>
           </div>
@@ -89,18 +89,38 @@
   <!--
     Contact Section
   -->
-  <div id="contact" style="height: 50vh; background-color: var(--grey)">
-    <h2>(Mail me section)</h2>
-    <div class="scroll-up-arrow">
-      <%= link_to "#home-top" do %>
-        <i class="fa-solid fa-angle-up"></i>
-      <% end %>
+  <div id="contact" style="background-color: var(--grey-back);">
+    <% email = "contact@one2manyhats.com" %>
+    <% url = "https://mail.google.com/mail/?view=cm&fs=1&to=#{email}" %>
+    <div class="contact-box">
+      <div class="flex-box f-justify-center">
+        <div class="box box-shadow flex-box f-justify-center">
+          <div class="contact-message flex-box d-flex-column">
+            <div style="flex-grow: 1;">
+              <h3 style="margin-bottom: 12px;">Fancy a chat?</h3>
+              <p>Feel free to <span><%= link_to "Send me an email", url, target: "_blank", class: "text-link highlighted" %></span> at contact@one2manyhats.com.</p>
+              <p>Or check out my Linkedin or check out my Github below!</p>
+            </div>
+            <div class="social-icons flex-box" style="padding: 0 16px">
+              <%= link_to "https://www.linkedin.com/in/michael-a-stump/", target: :_blank do %>
+                <i class="fa-brands fa-linkedin"></i>
+              <% end %>
+              <%= link_to "https://github.com/DisasterMike", target: :_blank do %>
+                <i class="fa-brands fa-github"></i>
+              <% end %>
+            </div>
+          </div>
+          <div class="contact-img">
+            <%= image_tag "yuna_solo.png", width: "250px" %>
+          </div>
+        </div>
+      </div>
     </div>
+    <%# <h3>If </h3> %>
   </div>
   <footer style="height: 15vh;">
-    <p>©️One2ManyHats 2024</p>
-    <div>
-      <p></p>
+    <div class="d-flex f-justify-end f-align-end" style="height: 100%">
+      <p style="margin: 0; padding: 16px;">©️One2ManyHats 2024</p>
     </div>
   </footer>
 </div>
