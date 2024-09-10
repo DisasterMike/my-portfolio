@@ -1,15 +1,15 @@
 <div class="web-banner flex-box f-justify-center f-align-center" style="height: 60vh; background-color: var(--black);">
-  <h1 style="font-size: 3.5rem;">My Web Projects</h1>
-</div>
-<div class="web-projects" style="height: 5000px;
-    background-color: var(--trans-white);
+  <h1 style="font-size: 3.5rem;">< Web Development ></h1>
+  </div>
+  <div class="web-projects" style="height: 5000px;
+    background-color: #ffffffe0;
     width: fit-content;
-    border-radius: 40px;
+    border-radius: 8px;
     margin: 0 auto;
     position: relative;
-    margin: 0 32px;">
-  <div class="middle-down-arrow flex-box f-justify-center" style="margin-bottom: 115px;">
-    <div style="
+    max-width: 1200px;">
+    <div class="middle-down-arrow flex-box f-justify-center" style="margin-bottom: 115px;">
+      <div style="
     background: white;
     border-radius: 50%;
     width: 120px;
@@ -20,30 +20,30 @@
     position: absolute;
     top: -55px;
     border: 7px solid black;">
-      <i class="fa-solid fa-angle-down" style="color: black; font-size: 5rem;"></i>
-    </div>
-  </div>
-  <div class="web-project-card flex-box f-justify-center" style="margin: 0px 64px;">
-    <div class="flex-box d-justify-center box-shadow" style="background-color: var(--white-text); color: var(--black); border-radius: 12px;">
-      <div class="project-image" style="padding: 16px;">
-        <%= image_tag "FilmSpot_core.png", width: "450px" %>
+        <i class="fa-solid fa-angle-down" style="color: black; font-size: 5rem;"></i>
       </div>
-      <div class="project-info" style="padding: 16px;">
-        <h2>FilmSpot</h2>
-        <h4 style="color: var(--highlight);">Lead Developer</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
-          Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
-        <div class="tech-stack">
-          <%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %>
-          <%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %>
-          <%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %>
-          <%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %>
-          <%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %>
-          <%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %>
-          <%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %>
+    </div>
+    <div class="web-project-card flex-box f-justify-center" style="margin: 0px 64px;">
+      <div class="flex-box d-justify-center box-shadow" style="background-color: #ffffffe0; color: var(--black); border-radius: 12px; padding: 32px;">
+        <div class="project-image" style="padding: 16px;">
+          <%= image_tag "FilmSpot_core.png", width: "500px", class: "box-shadow" %>
+        </div>
+        <div class="project-info" style="padding: 16px;">
+          <h2>FilmSpot</h2>
+          <h4 style="color: var(--highlight);">Lead Developer</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
+            Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
+          <div class="tech-stack">
+            <%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %>
+            <%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %>
+            <%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %>
+            <%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %>
+            <%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %>
+            <%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %>
+            <%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<%# background-color: rgb(20 41 59); %>
+  <%# background-color: rgb(20 41 59); %>
