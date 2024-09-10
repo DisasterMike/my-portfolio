@@ -29,6 +29,7 @@
 
 en:
   hello: "Hello world"
+  nav-home: "Home"
   nav-web: "Web Development"
   nav-games: "Game Development"
   nav-board-games: "Board Games"
