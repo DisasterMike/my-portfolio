@@ -9,8 +9,10 @@
     <%= javascript_importmap_tags %>
     <%= favicon_link_tag 'favicon.ico' %>
   </head>
-  <body>
+  <body style="background-image: url('<%= image_path("LogoWithoutName.png") %>'); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: 500px;">
     <%# render "core/navbar" %>
+    <%= render "core/language_toggle_banner" %>
+    <%= render "core/navbar" %>
     <%= yield %>
   </body>
 </html>

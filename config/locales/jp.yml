@@ -1,5 +1,6 @@
 jp:
   hello: "こんにちは"
+  nav-home: "ホームページ"
   nav-web: "ウェブ開発"
   nav-games: "ゲーム開発"
   nav-board-games: "ボードゲーム"

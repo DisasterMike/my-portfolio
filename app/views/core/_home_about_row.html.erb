@@ -6,10 +6,12 @@
   <div class="about-info box-shadow flex-box">
     <div class="text-box flex-box">
       <div class="text-box-info">
-        <h2><%= t("about-me") %></h2>
+        <div class="flex-box d-flex-column f-align-center">
+          <h2><strong>Michael Stump</strong></h2>
+          <h5>Full Stack Web Developer | Game Developer</h5>
+        </div>
         <p>Hey There! I'm Michael, thanks for stopping by.<br>
           I am a software engineer who loves to wear many different hats.
-          <br>
           <br>
           I specialize primarily in <span data-hobby-info-toggle-target="web"><%= link_to "Web Development", web_path, class: "text-link web" %></span>.
           Initially I was self taught, but then I went on to study full stack web development at Le Wagon, Tokyo.
@@ -18,7 +20,6 @@
           In my free time I also like to make <span data-hobby-info-toggle-target="games"><%= link_to "video games", games_path, class: "text-link" %></span> in Unity as a hobby.
           <br>
           In addition, I'm making my own <span data-hobby-info-toggle-target="board"><%= link_to "Board Games", boardgames_path, class: "text-link" %></span>, as well as creating my own digital art for my projects.
-          <br>
           Feel free to check out some of my work!
           <br>
           <br>
