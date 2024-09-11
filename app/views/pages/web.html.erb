@@ -1,5 +1,5 @@
 <div class="web-banner flex-box f-justify-center f-align-center" style="height: 60vh; background-color: var(--black);">
-  <h1 style="font-size: 3.5rem;">< Web Development ></h1>
+  <h1 style="font-size: 4rem; font-family: var(--logo-font);">< Web Development ></h1>
   </div>
   <div class="web-projects-container">
     <div class="middle-down-arrow flex-box f-justify-center">
@@ -12,59 +12,130 @@
     -->
     <h2 class="title flex-box f-justify-center">My Projects</h2>
     <!-- AnimePanda -->
-    <div class="web-project-card flex-box f-justify-center">
-      <div class="outer-box flex-box d-justify-center box-shadow">
-        <div class="project-image">
-          <%= image_tag "FilmSpot_core.png", width: "500px", class: "box-shadow" %>
-        </div>
-        <div class="project-info">
-          <h2>FilmSpot</h2>
-          <h4 style="color: var(--highlight);">Lead Developer</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
-            Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
-          <div class="tech-stack">
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %></div>
+    <div style="padding: 124px 64px; background: var(--black);">
+      <div class="web-project-card flex-box f-justify-center">
+        <div class="outer-box flex-box d-justify-center box-shadow">
+          <div class="project-image flex-box" style="max-width: 550px;">
+            <%= image_tag "AnimePanda1.png", class: "box-shadow" %>
+            <%= image_tag "AnimePanda2.png", class: "box-shadow" %>
+            <%= image_tag "AnimePanda4.png", class: "box-shadow" %>
           </div>
-          <div class="project-view-button flex-box f-justify-center" style="gap: 24px; padding: 6px 16px;">
-            <%= link_to "View", "https://filmspot-2969d7aec6c3.herokuapp.com/", class: "project-button view", target: "_blank" %>
-            <%= link_to "Github", "https://github.com/DisasterMike/FilmSpot", class: "project-button git", target: "_blank" %>
+          <div class="flex-box d-flex-column f-space-around">
+            <div class="project-info">
+              <h2>AnimePanda</h2>
+              <h5 style="color: var(--highlight);">Front End Lead</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
+                Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
+              <div class="tech-stack">
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %></div>
+              </div>
+            </div>
+            <div class="project-view-button flex-box f-justify-center" style="gap: 24px; padding: 6px 16px;">
+              <%= link_to "View", "https://www.animepanda.me/", class: "project-button view", target: "_blank" %>
+              <%= link_to "Github", "https://github.com/RamoneRobertson/AnimePanda", class: "project-button git", target: "_blank" %>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="projects-break"></div>
+    <!-- // AnimePanda -->
     <!-- FilmSpot -->
-    <div class="web-project-card flex-box f-justify-center">
-      <div class="outer-box flex-box d-justify-center box-shadow">
-        <div class="project-info">
-          <h2>FilmSpot</h2>
-          <h4 style="color: var(--highlight);">Lead Developer</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
-            Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
-          <div class="tech-stack">
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %></div>
-            <div><%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %></div>
+    <div style="padding: 124px 64px;">
+      <div class="web-project-card flex-box f-justify-center">
+        <div class="outer-box flex-box d-justify-center box-shadow">
+          <div class="flex-box d-flex-column f-space-around">
+            <div class="project-info">
+              <h2>FilmSpot</h2>
+              <h5 style="color: var(--highlight);">Lead Developer</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
+                Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
+              <div class="tech-stack">
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %></div>
+              </div>
+            </div>
+            <div class="project-view-button flex-box f-justify-center" style="gap: 24px; padding: 6px 16px;">
+              <%= link_to "View", "https://filmspot-2969d7aec6c3.herokuapp.com/", class: "project-button view", target: "_blank" %>
+              <%= link_to "Github", "https://github.com/DisasterMike/FilmSpot", class: "project-button git", target: "_blank" %>
+            </div>
           </div>
-          <div class="project-view-button flex-box f-justify-center" style="gap: 24px; padding: 6px 16px;">
-            <%= link_to "View", "#", class: "project-button view" %>
-            <%= link_to "Github", "#", class: "project-button git" %>
+          <div class="project-image">
+            <%= image_tag "FilmSpot_core.png", class: "box-shadow", style: "max-width: 550px" %>
           </div>
-        </div>
-        <div class="project-image">
-          <%= image_tag "FilmSpot_core.png", width: "500px", class: "box-shadow" %>
         </div>
       </div>
     </div>
+    <!-- // FilmSpot -->
+    <!-- WatchList -->
+    <div style="padding: 124px 64px; background: var(--black);">
+      <div class="web-project-card flex-box f-justify-center">
+        <div class="outer-box flex-box d-justify-center box-shadow">
+          <div class="project-image">
+            <%= image_tag "Watchlist2.png", class: "box-shadow", style: "max-width: 550px" %>
+          </div>
+          <div class="flex-box d-flex-column f-space-around">
+            <div class="project-info">
+              <h2>WatchList</h2>
+              <h5 style="color: var(--highlight);">Solo Project</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
+                Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
+              <div class="tech-stack">
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %></div>
+              </div>
+            </div>
+            <div class="project-view-button flex-box f-justify-center" style="gap: 24px; padding: 6px 16px;">
+              <%= link_to "View", "https://michaels-watchlist-app-52482a9726f6.herokuapp.com/", class: "project-button view", target: "_blank" %>
+              <%= link_to "Github", "https://github.com/DisasterMike/rails-watch-list", class: "project-button git", target: "_blank" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // WatchList -->
+    <!-- Five Nights At Le Wagon -->
+    <div style="padding: 124px 64px;">
+      <div class="web-project-card flex-box f-justify-center">
+        <div class="outer-box flex-box d-justify-center box-shadow">
+          <div class="flex-box d-flex-column f-space-around">
+            <div class="project-info">
+              <h2>Five Nights At Le Wagon</h2>
+              <h5 style="color: var(--highlight);">Solo Project</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
+                Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
+              <div class="tech-stack">
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
+                <div><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
+              </div>
+            </div>
+            <div class="project-view-button flex-box f-justify-center" style="gap: 24px; padding: 6px 16px;">
+              <%= link_to "View", "https://disastermike.github.io/Five-Nights-at-Le-Wagon/", class: "project-button view", target: "_blank" %>
+              <%= link_to "Github", "https://github.com/DisasterMike/Five-Nights-at-Le-Wagon", class: "project-button git", target: "_blank" %>
+            </div>
+          </div>
+          <div class="project-image">
+            <%= image_tag "Freddy1.png", class: "box-shadow", style: "max-width: 550px" %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // Five Nights At Le Wagon -->
   </div>
   <%# background-color: rgb(20 41 59); %>
