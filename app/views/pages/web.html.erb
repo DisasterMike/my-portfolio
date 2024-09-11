@@ -2,7 +2,7 @@
   <h1 style="font-size: 3.5rem;">< Web Development ></h1>
   </div>
   <div class="web-projects" style="height: 5000px;
-    background-color: #ffffffe0;
+    background: var(--grey-back);
     width: fit-content;
     border-radius: 8px;
     margin: 0 auto;
@@ -12,19 +12,19 @@
       <div style="
     background: white;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: -55px;
     border: 7px solid black;">
-        <i class="fa-solid fa-angle-down" style="color: black; font-size: 5rem;"></i>
+        <i class="fa-solid fa-angle-down" style="color: black; font-size: 4rem;"></i>
       </div>
     </div>
     <div class="web-project-card flex-box f-justify-center" style="margin: 0px 64px;">
-      <div class="flex-box d-justify-center box-shadow" style="background-color: #ffffffe0; color: var(--black); border-radius: 12px; padding: 32px;">
+      <div class="flex-box d-justify-center box-shadow" style="background-color: #ffffffe0; color: var(--black); border-radius: 6px; padding: 32px;">
         <div class="project-image" style="padding: 16px;">
           <%= image_tag "FilmSpot_core.png", width: "500px", class: "box-shadow" %>
         </div>
@@ -33,14 +33,18 @@
           <h4 style="color: var(--highlight);">Lead Developer</h4>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum minima tempore quaerat itaque dicta labore praesentium commodi amet animi.
             Inventore impedit aperiam fugiat iusto accusantium. Sed quia veritatis atque?</p>
-          <div class="tech-stack">
-            <%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %>
-            <%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %>
-            <%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %>
-            <%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %>
-            <%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %>
-            <%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %>
-            <%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %>
+          <div class="tech-stack" style="margin-bottom: 16px;">
+            <div style="width: 40px; display: inline-block; color: var(--grey);"><%= render inline: Rails.root.join('app/assets/images/icons/rails-icon.svg').read %></div>
+            <div style="width: 40px; display: inline-block; color: var(--grey);"><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
+            <div style="width: 40px; display: inline-block; color: var(--grey);"><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
+            <div style="width: 40px; display: inline-block; color: var(--grey);"><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
+            <div style="width: 40px; display: inline-block; color: var(--grey);"><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
+            <div style="width: 40px; display: inline-block; color: var(--grey);"><%= render inline: Rails.root.join('app/assets/images/icons/heroku-icon.svg').read %></div>
+            <div style="width: 40px; display: inline-block; color: var(--grey);"><%= render inline: Rails.root.join('app/assets/images/icons/figma-icon.svg').read %></div>
+          </div>
+          <div class="project-view-button flex-box f-justify-center" style="gap: 24px; padding: 6px 16px;">
+            <%= link_to "View", "#", style: "text-decoration: none; color: var(--white-text); background-color: var(--black); padding: 8px 24px; border-radius: 16px; display: block; width: fit-content; flex-grow: 1; text-align: center;"%>
+            <%= link_to "Github", "#", style: "text-decoration: none; color: var(--black); background-color: var(--white-text); border: 2px solid var(--black); padding: 8px 24px; border-radius: 16px; display: block; width: fit-content; flex-grow: 1; text-align: center;"%>
           </div>
         </div>
       </div>
