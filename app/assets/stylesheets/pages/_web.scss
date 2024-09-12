@@ -6,11 +6,15 @@
   // margin: 0 auto;
   position: relative;
   // max-width: 1200px;
-  padding-bottom: 120px;
+  padding-bottom: 85px;
 
   .title{
     color: var(--black);
     margin-bottom: 32px;
+    background: var(--white-text);
+    padding: 16px;
+    border-top: 3px solid var(--black);
+    border-bottom: 3px solid var(--black);
   }
 }
 
@@ -42,10 +46,29 @@
 .web-project-card{
   margin: 0px 64px;
 
-  .outer-box{
-    background-color: #ffffffe0;
+  // .outer-box{
+  //   background-color: #ffffffe0;
+  //   color: var(--black);
+  //   border-radius: 6px;
+  //   padding: 32px;
+  //   max-width: 1000px;
+  // }
+
+  .outer-box.black{
+    // background-color: #ffffffe0;
+    // color: var(--black);
+    // border-radius: 6px;
+    border-top: 2px solid var(--white-text);
+    border-bottom: 2px solid var(--white-text);
+    padding: 32px;
+    max-width: 1000px;
+  }
+  .outer-box.white{
+    // background-color: #ffffffe0;
     color: var(--black);
-    border-radius: 6px;
+    // border-radius: 6px;
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
     padding: 32px;
     max-width: 1000px;
   }
@@ -63,7 +86,21 @@
   }
 }
 
-.tech-stack{
+.tech-stack.black{
+  margin-bottom: 16px;
+
+  div{
+    width: 40px;
+    display: inline-block;
+    // color: var(--grey);
+    color: #494949;
+  }
+
+  div:hover{
+    color: var(--white-text);
+  }
+}
+.tech-stack.white{
   margin-bottom: 16px;
 
   div{
@@ -92,6 +129,7 @@
   &.view{
     color: var(--white-text);
     background-color: var(--black);
+    border: 2px solid var(--white-text);
   }
   &.git{
     color: var(--black);
