@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="hobby-info-toggle"
 export default class extends Controller {
-  static targets = [ "button", "mover", "web", "games", "board" ]
+  static targets = [ "button", "mover", "web", "games", "board", "webPic", "gamesPic", "boardPic" ]
 
   connect() {
     // console.log("Hello from the hobby info toggle controller");
@@ -13,6 +13,11 @@ export default class extends Controller {
     this.buttonTargets.forEach(button => {
       button.classList.remove("active");
     });
+
+    // Remove all show classes from pictures
+    this.webPicTarget.classList.remove("show");
+    this.gamesPicTarget.classList.remove("show");
+    this.boardPicTarget.classList.remove("show");
 
     // Add active class to current hovered button
     event.currentTarget.classList.add("active");
@@ -27,6 +32,8 @@ export default class extends Controller {
     if(currentHobby === "game"){
       this.moverTarget.classList.add("game");
 
+      this.gamesPicTarget.classList.add("show");
+
       this.gamesTarget.querySelector("a").classList.add("games");
       this.webTarget.querySelector("a").classList.remove("web");
       this.boardTarget.querySelector("a").classList.remove("board-games");
@@ -34,12 +41,16 @@ export default class extends Controller {
     if(currentHobby === "web"){
       this.moverTarget.classList.add("web");
 
+      this.webPicTarget.classList.add("show");
+
       this.webTarget.querySelector("a").classList.add("web");
       this.gamesTarget.querySelector("a").classList.remove("games");
       this.boardTarget.querySelector("a").classList.remove("board-games");
     }
     if(currentHobby === "board"){
       this.moverTarget.classList.add("board-game");
+
+      this.boardPicTarget.classList.add("show");
 
       this.boardTarget.querySelector("a").classList.add("board-games");
       this.webTarget.querySelector("a").classList.remove("web");

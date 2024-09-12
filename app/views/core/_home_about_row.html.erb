@@ -1,6 +1,10 @@
 <div class="about-row flex-box f-justify-center">
   <div class="about-image-box flex-box f-align-center f-justify-end">
-    <%= image_tag "me.jpg" %>
+    <div class="about-img">
+      <div class="img-box show" data-hobby-info-toggle-target="webPic" style="background-image: url('<%= image_path("MeDemoDay1.jpg") %>'); background-position: center; background-size: cover;"></div>
+      <div class="img-box" data-hobby-info-toggle-target="gamesPic" style="background-image: url('<%= image_path("me.jpg") %>'); background-position: center; background-size: cover;"></div>
+      <div class="img-box" data-hobby-info-toggle-target="boardPic" style="background-image: url('<%= image_path("MeAtLeWagon.jpg") %>'); background-position: center; background-size: cover;"></div>
+    </div>
     <div class="about-img-back"></div>
   </div>
   <div class="about-info box-shadow flex-box">
