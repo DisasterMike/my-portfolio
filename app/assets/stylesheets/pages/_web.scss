@@ -27,6 +27,14 @@
   }
 }
 
+.opacity-transition{
+  opacity: 0;
+  transition: opacity 1s;
+}
+.opacity-full{
+  opacity: 1;
+}
+
 .middle-down-arrow{
   // margin-bottom: 115px;
 
