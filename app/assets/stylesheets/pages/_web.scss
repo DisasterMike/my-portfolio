@@ -27,6 +27,17 @@
   }
 }
 
+.opacity-transition{
+  opacity: 0;
+  transition: all 1s;
+  position: relative;
+  top: 30px;
+}
+.opacity-full{
+  opacity: 1;
+  top: 0;
+}
+
 .middle-down-arrow{
   // margin-bottom: 115px;
 
