@@ -12,7 +12,7 @@
   // margin: 0 auto;
   position: relative;
   // max-width: 1200px;
-  padding-bottom: 85px;
+  // padding-bottom: 85px;
 
   .title{
     color: var(--black);
@@ -213,5 +213,27 @@
 // }
 
 @media (max-width: 480px){
+  .web-banner{
+    h1{
+      font-size: 2rem;
+    }
+  }
 
+  .web-project-black{
+    padding: 64px 0;
+  }
+  .web-project-white{
+    padding: 64px 0;
+  }
+
+  .web-project-card{
+    .project-image{
+      min-width: 380px;
+      height: 240px;
+    }
+  }
+
+  .project-view-button{
+    justify-content: center;
+  }
 }
