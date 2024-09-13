@@ -39,3 +39,30 @@ body{
 .box-shadow{
   box-shadow: 0 0 20px 0px #00000057;
 }
+
+
+body{
+  background-image: url("LogoWithoutName.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+}
+
+
+
+@media (max-width: 768px){
+  body{
+    background-image: none;
+  }
+}
+
+// @media (max-width: 600px){
+
+// }
+
+@media (max-width: 480px){
+  body{
+    background-image: none;
+  }
+}
