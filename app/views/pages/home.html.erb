@@ -36,7 +36,7 @@
           <div class="hobby-card flex-box">
             <div class="hobby-card-picture" style="background-image: url('<%= image_path("AnimePanda1.png") %>');">
             </div>
-            <div class="hobby-card-info flex-box d-flex-column">
+            <div data-hobby-info-toggle-target="webLink" class="hobby-card-info flex-box d-flex-column">
               <%= link_to web_path do %>
                 <h2><%= t("nav-web") %></h2>
               <% end %>
@@ -49,8 +49,8 @@
           </div>
           <!-- Game Development Card -->
           <div class="hobby-card flex-box">
-            <div class="hobby-card-info flex-box d-flex-column">
-              <%= link_to web_path do %>
+            <div data-hobby-info-toggle-target="gamesLink" class="hobby-card-info flex-box d-flex-column">
+              <%= link_to games_path do %>
                 <h2><%= t("nav-games") %></h2>
               <% end %>
               <p>
@@ -66,8 +66,8 @@
           <div class="hobby-card flex-box">
             <div class="hobby-card-picture" style="background-image: url('<%= image_path("angry_octopus.png") %>');">
             </div>
-            <div class="hobby-card-info flex-box d-flex-column">
-              <%= link_to web_path do %>
+            <div data-hobby-info-toggle-target="boardLink" class="hobby-card-info flex-box d-flex-column">
+              <%= link_to boardgames_path do %>
                 <h2><%= t("nav-board-games") %></h2>
               <% end %>
               <p>
@@ -85,16 +85,14 @@
     Contact Section
   -->
   <div id="contact" style="background: var(--grey-back);">
-    <% email = "contact@one2manyhats.com" %>
-    <% url = "https://mail.google.com/mail/?view=cm&fs=1&to=#{email}" %>
     <div class="contact-box">
       <div class="flex-box f-justify-center">
         <div class="box box-shadow flex-box f-justify-center">
           <div class="contact-message flex-box d-flex-column">
             <div style="flex-grow: 1;">
-              <h3 style="margin-bottom: 12px;">Fancy a chat?</h3>
-              <p>Feel free to <span><%= link_to "Send me an email", url, target: "_blank", class: "text-link highlighted" %></span> at contact@one2manyhats.com.</p>
-              <p>Or check out my Linkedin or Github below!</p>
+              <h3 style="margin-bottom: 12px;"><%= t("contact-chat") %></h3>
+              <p><%= t("contact-mail-me-a").try(:html_safe) %></p>
+              <p><%= t("contact-mail-me-b") %></p>
             </div>
             <div class="social-icons flex-box" style="padding: 0 16px">
               <%= link_to "https://www.linkedin.com/in/michael-a-stump/", target: :_blank do %>
