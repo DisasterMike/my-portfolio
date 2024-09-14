@@ -40,11 +40,7 @@
               <%= link_to web_path do %>
                 <h2><%= t("nav-web") %></h2>
               <% end %>
-              <p>
-                "I specialize in full stack web development, with a love for creating interesting designs and animations.
-                I have experience in various front-end and back-end technologies, such as HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and more.
-                Next I want to explore some different frame works such as React."
-              </p>
+              <p><%= t("web-info-text") %></p>
             </div>
           </div>
           <!-- Game Development Card -->
@@ -53,11 +49,7 @@
               <%= link_to games_path do %>
                 <h2><%= t("nav-games") %></h2>
               <% end %>
-              <p>
-                "In my free time, I love to create video games using the Unity Engine.
-                Over the years, I have made various small to medium projects, which have really helped me to hone my programming skills, such as understanding the importance of scalability and clean clode.
-                It's quite the challenge being a solo developer, but I love every second of it!.""
-              </p>
+              <p><%= t("games-info-text") %></p>
             </div>
             <div class="hobby-card-picture" style="background-image: url('<%= image_path("A_Light_Touch_GIF.gif") %>'); background-position: center;">
             </div>
@@ -70,11 +62,7 @@
               <%= link_to boardgames_path do %>
                 <h2><%= t("nav-board-games") %></h2>
               <% end %>
-              <p>
-                "A few years back, I found a love for board games, and have been designing a few of my own.
-                This has really helped me flex my creative muscles and develop my artistic skills. I believe board games have a huge importance on UX and UI design,
-                which can be quite a challenging, but very rewarding experience."
-              </p>
+              <p><%= t("board-games-info-text") %></p>
             </div>
           </div>
         </div>

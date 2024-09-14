@@ -54,3 +54,12 @@ en:
   contact-chat: "Fancy a chat?"
   contact-mail-me-a: "Feel free to <span><a class='text-link highlighted' href='https://mail.google.com/mail/?view=cm&fs=1&to=contact@one2manyhats.com'>Send me an email<a></span> at contact@one2manyhats.com."
   contact-mail-me-b: "Or check out my Linkedin or Github below!"
+  web-info-text: "\"I specialize in full stack web development, with a love for creating interesting designs and animations.
+                I have experience in various front-end and back-end technologies, such as HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and more.
+                Next I want to explore some different frame works such as React.\""
+  games-info-text: "\"In my free time, I love to create video games using the Unity Engine.
+                Over the years, I have made various small to medium projects, which have really helped me to hone my programming skills, such as understanding the importance of scalability and clean clode.
+                It's quite the challenge being a solo developer, but I love every second of it!.\""
+  board-games-info-text: "\"A few years back, I found a love for board games, and have been designing a few of my own.
+                This has really helped me flex my creative muscles and develop my artistic skills. I believe board games have a huge importance on UX and UI design,
+                which can be quite a challenging, but very rewarding experience.\""
