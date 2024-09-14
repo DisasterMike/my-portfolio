@@ -7,3 +7,27 @@ jp:
   nav-about-me: "私のこと"
   logo-click-me: "クリックしてね！"
   about-me: "自己紹介"
+  job-titles: "フルスタックウェブ開発、 ゲーム開発"
+  about-box-text: "こんにちは、マイケルと申します。よろしくお願いします。<br>
+          私はたくさん色んなものが好きなソフトウェアエンジニアです。
+          <br>
+          <span data-hobby-info-toggle-target='web'><a class='text-link web' href='#'>ウェブ開発</a></span>と専門とします。
+          最初に自分で学んだけれでも、後でLe Wagonと言う学校でフルスタックを勉強しました。
+          <br>
+          <br>
+          休み時間にはUnityで自分の<span data-hobby-info-toggle-target='games'><a class='text-link' href='#'>ビデオゲーム</a></span>を作るのも好きです。
+          <br>
+          それとも、オリジナル<span data-hobby-info-toggle-target='board'><a class='text-link' href='#'>ボードゲーム</a></span>を作ったり、デジタルアートを作ったりもします。
+          いつでも良かったら見てください。
+          <br>
+          <br>
+          新しいスキルを学ぶのと、新しい人に会うのが大好きなので、いつでも連絡してください。"
+  contact-chat: "話したい？"
+  contact-mail-me-a: "contact@one2manyhats.comに<span><a class='text-link highlighted' href='https://mail.google.com/mail/?view=cm&fs=1&to=contact@one2manyhats.com'>メールしてね<a></span>。"
+  contact-mail-me-b: "それとも、私の  LinkedInかGitHubを見てください！"
+  web-info-text: "\"ウェブ開発に専門していて、クリエイティブのデザインとアニメーションに興味があります。
+                フロントエンドとバックエンドに経験があり、例えば、HTML, CSS, JavaScript, Ruby on Rails, PostgreSQLなど。今度、Reactとかもっとフロントエンドのフレームワークを勉強したいんです。\""
+  games-info-text: "\"休み時間にはUnityで自分のビデオゲームを作るのが好きです。
+                長年に小さいからもっと大きいプロジェクトを作っていました。それで、スケーラビリティとクリーンコードの重要性が分かってきました。\""
+  board-games-info-text: "\"数年前にボードゲームが好きになりました。その後、自分のものも作っていました。
+                それで私のクリエイティブのスキルを上達しました。ボードゲームではUIとUXは重要性があると思って、難しいけどやりがいがある経験ですね。\""

@@ -2,10 +2,15 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="hobby-info-toggle"
 export default class extends Controller {
-  static targets = [ "button", "mover", "web", "games", "board", "webPic", "gamesPic", "boardPic" ]
+  static targets = [ "button", "mover", "web", "games", "board", "webPic", "gamesPic", "boardPic", "webLink", "gamesLink", "boardLink" ]
 
   connect() {
     // console.log("Hello from the hobby info toggle controller");
+
+    // set the hrefs for the about row text so it works for different languages
+    this.webTarget.querySelector("a").href = this.webLinkTarget.querySelector("a").href;
+    this.gamesTarget.querySelector("a").href = this.gamesLinkTarget.querySelector("a").href;
+    this.boardTarget.querySelector("a").href = this.boardLinkTarget.querySelector("a").href;
   }
 
   hover(event){

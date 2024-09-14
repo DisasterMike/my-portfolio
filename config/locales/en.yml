@@ -36,3 +36,30 @@ en:
   nav-about-me: "About Me"
   logo-click-me: "Click me!"
   about-me: "About Me"
+  job-titles: "Full Stack Web Developer | Game Developer"
+  about-box-text: "Hey There! I'm Michael, thanks for stopping by.<br>
+          I am a software engineer who loves to wear many different hats.
+          <br>
+          I specialize primarily in <span data-hobby-info-toggle-target='web'><a class='text-link web' href='#'>web development</a></span>.
+          Initially I was self taught, but then I went on to study full stack web development at Le Wagon, Tokyo.
+          <br>
+          <br>
+          In my free time I also like to make <span data-hobby-info-toggle-target='games'><a class='text-link' href='#'>video games</a></span> in Unity as a hobby.
+          <br>
+          In addition, I'm making my own <span data-hobby-info-toggle-target='board'><a class='text-link' href='#'>board games</a></span>, as well as creating my own digital art for my projects.
+          Feel free to check out some of my work!
+          <br>
+          <br>
+          I love learning and meeting new people, so feel free to reach out!"
+  contact-chat: "Fancy a chat?"
+  contact-mail-me-a: "Feel free to <span><a class='text-link highlighted' href='https://mail.google.com/mail/?view=cm&fs=1&to=contact@one2manyhats.com'>Send me an email<a></span> at contact@one2manyhats.com."
+  contact-mail-me-b: "Or check out my Linkedin or Github below!"
+  web-info-text: "\"I specialize in full stack web development, with a love for creating interesting designs and animations.
+                I have experience in various front-end and back-end technologies, such as HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and more.
+                Next I want to explore some different frame works such as React.\""
+  games-info-text: "\"In my free time, I love to create video games using the Unity Engine.
+                Over the years, I have made various small to medium projects, which have really helped me to hone my programming skills, such as understanding the importance of scalability and clean clode.
+                It's quite the challenge being a solo developer, but I love every second of it!.\""
+  board-games-info-text: "\"A few years back, I found a love for board games, and have been designing a few of my own.
+                This has really helped me flex my creative muscles and develop my artistic skills. I believe board games have a huge importance on UX and UI design,
+                which can be quite a challenging, but very rewarding experience.\""
