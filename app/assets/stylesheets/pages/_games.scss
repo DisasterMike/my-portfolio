@@ -1,0 +1,108 @@
+.game-project{
+  background: var(--black);
+  padding: 124px 0;
+}
+
+.game-project-card{
+  padding: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 2px solid var(--white-text);
+  border-bottom: 2px solid var(--white-text);
+}
+
+.game-pictures-box{
+  min-width: 500px;
+  height: 450px;
+  background: #222222;
+  margin: 16px;
+}
+
+.game-main-img{
+  transition: background-image 0.4s;
+  width: 100%;
+  height: 75%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.pictures-row{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 25%;
+  padding: 4px 0;
+  gap: 4px;
+  scrollbar-color: var(--white-text) #222222;
+  scrollbar-width: thin;
+}
+
+.game-picture{
+  // transition: all 0.5s;
+  min-width: 31%;
+  background-size: cover;
+  background-position: center;
+
+  &.current{
+    border: 3px solid var(--highlight);
+  }
+}
+
+.game-project-box{
+  padding: 24px;
+
+  .game-project-info{
+    flex-grow: 1;
+  }
+}
+
+.game-genres.black{
+  gap: 16px;
+  margin: 16px 0;
+
+  p{
+    background-color: var(--white-text);
+    color: var(--black);
+    border-radius: 8px;
+    padding: 2px 10px;
+    margin: 0;
+    height: fit-content;
+    cursor: default;
+  }
+
+  p:hover{
+    background-color: var(--black);
+    color: var(--white-text);
+  }
+}
+
+.games-tech-stack.black{
+  margin-bottom: 16px;
+  gap: 8px;
+
+  div{
+    width: 40px;
+    // display: inline-block;
+    // color: var(--grey);
+    color: #494949;
+  }
+
+  div:hover{
+    color: var(--white-text);
+  }
+}
+.games-tech-stack.white{
+  margin-bottom: 16px;
+  gap: 8px;
+
+  div{
+    width: 40px;
+    // display: inline-block;
+    // color: var(--grey);
+    color: #acacac;
+  }
+
+  div:hover{
+    color: var(--black);
+  }
+}

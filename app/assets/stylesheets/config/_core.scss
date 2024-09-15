@@ -49,6 +49,22 @@ body{
   background-size: 500px;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  // background: #222222;        /* color of the tracking area */
+  background: var(--white-text);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  // background-color: var(--white-text);    /* color of the scroll thumb */
+  background-color: var(--black);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  // border: 3px solid var(--grey);  /* creates padding around scroll thumb */
+}
+
 
 
 @media (max-width: 768px){

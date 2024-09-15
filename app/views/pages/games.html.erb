@@ -1,6 +1,52 @@
-<div class="game-banner flex-box f-justify-center f-align-center" style="height: 50vh;">
-  <div>
-    <h1>Welcome to the video games page.</h1>
-    <h2>Coming soon...</h2>
+<div class="web-banner flex-box f-justify-center f-align-center">
+  <h1>< Game Development ></h1>
   </div>
-</div>
+  <div class="web-projects-container" style="height: 1000px;">
+    <div class="middle-down-arrow flex-box f-justify-center">
+      <div class="flex-box f-justify-center f-align-center">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <div style="height: 115px;"></div>
+    <!--
+      Game Projects
+    -->
+    <div data-controller="game-image-switch" class="game-project">
+      <div class="game-project-card flex-box f-justify-center">
+        <% pictures_array = [ image_path('A_Light_Touch_GIF.gif'), image_path('Paulrus.jpg'), image_path('a_light_touch_img.png'), image_path('a_light_touch_img.png') ] %>
+        <div class="flex-box f-align-center">
+          <div class="game-pictures-box flex-box d-flex-column">
+            <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
+              <%= image_tag( "a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
+            </div>
+            <div class="pictures-row flex-box">
+              <% pictures_array.each do |pic| %>
+                <div data-action="click->game-image-switch#switch" data-game-image-switch-target="gameImage" class="game-picture" style="background-image: url('<%= image_path(pic) %>');"></div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="game-project-box flex-box d-flex-column f-space-around">
+          <div class="game-project-info">
+            <h2>A Light Touch</h2>
+            <h5 style="color: var(--highlight);">Commercial Project</h5>
+            <p>Desc - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi illo sunt porro asperiores eos,
+              nostrum ex similique architecto? Odio enim at asperiores corrupti ratione. Labore aut maxime vel ipsa quaerat!</p>
+            <% genres = [ "Puzzle", "Adventure", "Indie" ] %>
+            <div class="game-genres black flex-box">
+              <% genres.each do |genre| %>
+                <p><%= genre %></p>
+              <% end %>
+            </div>
+            <div class="games-tech-stack black flex-box">
+              <div><%= render inline: Rails.root.join('app/assets/images/icons/unity-icon.svg').read %></div>
+              <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
+            </div>
+          </div>
+          <div class="game-link">
+            <p>Steam store page coming soon...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
