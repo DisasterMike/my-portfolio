@@ -9,3 +9,32 @@
 .game-main-img{
   transition: background-image 0.4s;
 }
+
+.games-tech-stack.black{
+  margin-bottom: 16px;
+
+  div{
+    width: 40px;
+    display: inline-block;
+    // color: var(--grey);
+    color: #494949;
+  }
+
+  div:hover{
+    color: var(--white-text);
+  }
+}
+.games-tech-stack.white{
+  margin-bottom: 16px;
+
+  div{
+    width: 40px;
+    display: inline-block;
+    // color: var(--grey);
+    color: #acacac;
+  }
+
+  div:hover{
+    color: var(--black);
+  }
+}
