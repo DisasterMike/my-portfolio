@@ -1,6 +1,30 @@
-<div class="game-banner flex-box f-justify-center f-align-center" style="height: 50vh;">
-  <div>
-    <h1>Welcome to the video games page.</h1>
-    <h2>Coming soon...</h2>
+<div class="web-banner flex-box f-justify-center f-align-center">
+  <h1>< Game Development ></h1>
   </div>
-</div>
+  <div class="web-projects-container" style="height: 1000px;">
+    <div class="middle-down-arrow flex-box f-justify-center">
+      <div class="flex-box f-justify-center f-align-center">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <div style="height: 115px;"></div>
+    <!--
+      Game Projects
+    -->
+    <div class="game-project">
+      <div class="game-project-card flex-box f-justify-center" style="padding: 32px; max-width: 1000px; margin: 0 auto;">
+        <% pictures_array = [ image_path('a_light_touch_img.png'), image_path('Paulrus.jpg'), image_path('a_light_touch_img.png'), image_path('a_light_touch_img.png') ] %>
+        <div class="game-pictures flex-box d-flex-column" style="width: 500px; height: 450px">
+          <div class="game-main-img" style="width: 100%; height: 75%; background-image: url('<%= image_path(pictures_array[0]) %>'); background-size: cover; background-position: center;"></div>
+          <div class="pictures-row flex-box" style="flex-wrap: nowrap; overflow-x: auto; height: 25%; padding: 3px 0; gap: 3px;">
+            <% pictures_array.each do |pic| %>
+              <div class="game-picture" style="min-width: 31%; background-image: url('<%= image_path(pic) %>'); background-size: cover; background-position: center;"></div>
+            <% end %>
+          </div>
+        </div>
+        <div class="game-project-info" style="padding: 24px;">
+          <h2>A light Touch</h2>
+        </div>
+      </div>
+    </div>
+  </div>

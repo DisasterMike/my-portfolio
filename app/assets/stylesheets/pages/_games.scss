@@ -1,0 +1,7 @@
+.game-picture{
+  transition: all 0.5s;
+
+  &.current{
+    border: 3px solid var(--highlight);
+  }
+}
