@@ -1,6 +1,7 @@
 <!-- A Light Touch -->
-<div data-controller="game-image-switch" class="game-project black">
-  <div class="game-project-card black flex-box f-justify-center">
+<div data-controller="game-image-switch scrolling-opacity" class="game-project black">
+  <div data-scrolling-opacity-target="project" class="game-project-card black flex-box f-justify-center f-align-center opacity-transition">
+    <div data-scrolling-opacity-target="scrollWatcher" style="position: absolute;"></div>
     <% pictures_array = [ image_path('a-light-touch/A_Light_Touch_GIF.gif'), image_path('Paulrus.jpg'), image_path('a-light-touch/a_light_touch_img.png'), image_path('a-light-touch/a_light_touch_img.png') ] %>
     <div class="flex-box f-align-center">
       <div class="game-pictures-box flex-box d-flex-column">
@@ -21,6 +22,8 @@
         <p>
           A light puzzle game about guiding a small chick to safety in a dark world.
           As you explore you'll uncover secrets, ward off monsters and safely excort your new companion to try and dispell the darkness.
+          <br>
+          This concept was originally a game jam idea, but now I'm turning it into a larger project.
         </p>
         <% genres = [ "Puzzle", "Adventure", "Indie", "Atmospheric", "Dark" ] %>
         <div class="game-genres black flex-box">
@@ -41,15 +44,16 @@
 </div>
 <!-- // A Light Touch -->
 <!-- Paulrus -->
-<div data-controller="game-image-switch" class="game-project white">
-  <div class="game-project-card white flex-box f-justify-center">
+<div data-controller="game-image-switch scrolling-opacity" class="game-project white">
+  <div data-scrolling-opacity-target="project" class="game-project-card white flex-box f-justify-center f-align-center opacity-transition">
+    <div data-scrolling-opacity-target="scrollWatcher" style="position: absolute;"></div>
     <div class="game-project-box flex-box d-flex-column f-space-around">
       <div class="game-project-info">
         <h2>Paulrus and The Lost Waters</h2>
         <h5 style="color: var(--white-text);">Prototype</h5>
         <p>
-          A light puzzle game about guiding a small chick to safety in a dark world.
-          As you explore you'll uncover secrets, ward off monsters and safely excort your new companion to try and dispell the darkness.
+          A fun and simple 3D platformer game, inspired by 90's classics like Banjo Kazooie and Spyro the Dragon.
+          This was my first ever unity project, which I later began to remake with updated graphics and cleaner code.
         </p>
         <% genres = [ "3D Platformer", "Indie", "Adventure", "Cartoony", "Collectathon", "Action" ] %>
         <div class="game-genres white flex-box">
@@ -60,6 +64,7 @@
         <div class="games-tech-stack white flex-box">
           <div><%= render inline: Rails.root.join('app/assets/images/icons/unity-icon.svg').read %></div>
           <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/blender-icon.svg').read %></div>
         </div>
       </div>
       <div class="game-link">
