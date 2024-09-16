@@ -36,7 +36,7 @@
           <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
         </div>
       </div>
-      <div class="game-link">
+      <div class="game-link flex-box f-justify-center">
         <p>Steam store page coming soon...</p>
       </div>
     </div>
@@ -67,15 +67,15 @@
           <div><%= render inline: Rails.root.join('app/assets/images/icons/blender-icon.svg').read %></div>
         </div>
       </div>
-      <div class="game-link">
-        <p>Steam store page coming soon...</p>
+      <div class="game-link flex-box f-justify-center">
+        <%= link_to "Store Page", "https://one2manyhats.itch.io/paulrus-and-the-lost-waters", class: "project-button view", target: "_blank" %>
       </div>
     </div>
     <% pictures_array = [ image_path('a-light-touch/A_Light_Touch_GIF.gif'), image_path('Paulrus.jpg'), image_path('a-light-touch/a_light_touch_img.png'), image_path('a-light-touch/a_light_touch_img.png') ] %>
     <div class="flex-box f-align-center">
       <div class="game-pictures-box flex-box d-flex-column">
         <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
-          <%= image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
+          <%# image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
         </div>
         <div class="pictures-row flex-box">
           <% pictures_array.each do |pic| %>
@@ -87,3 +87,93 @@
   </div>
 </div>
 <!-- // Paulrus -->
+<!-- Too Many Letters -->
+<div data-controller="game-image-switch scrolling-opacity" class="game-project black">
+  <div data-scrolling-opacity-target="project" class="game-project-card black flex-box f-justify-center f-align-center opacity-transition">
+    <div data-scrolling-opacity-target="scrollWatcher" style="position: absolute;"></div>
+    <% pictures_array = [ image_path('too-many-letters/TooManyLetters.png'), image_path('Paulrus.jpg'), image_path('a-light-touch/a_light_touch_img.png'), image_path('a-light-touch/a_light_touch_img.png') ] %>
+    <div class="flex-box f-align-center">
+      <div class="game-pictures-box flex-box d-flex-column">
+        <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
+          <%# image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
+        </div>
+        <div class="pictures-row flex-box">
+          <% pictures_array.each do |pic| %>
+            <div data-action="click->game-image-switch#switch" data-game-image-switch-target="gameImage" class="game-picture" style="background-image: url('<%= image_path(pic) %>');"></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="game-project-box flex-box d-flex-column f-space-around">
+      <div class="game-project-info">
+        <h2>Too Many Letters</h2>
+        <h5 style="color: var(--highlight);">Game Jam Project</h5>
+        <p>
+          A light shooting game about surviving as long as you can.
+          This was made in 1 week for a game jam with the theme "bullet hell".
+          <br>
+          I decided to take a unique approach and create an interesting mechanic around English letters and typing.
+        </p>
+        <% genres = [ "Bullet Hell", "Top-Down Shooter", "Indie", "Combat", "Survival" ] %>
+        <div class="game-genres black flex-box">
+          <% genres.each do |genre| %>
+            <p><%= genre %></p>
+          <% end %>
+        </div>
+        <div class="games-tech-stack black flex-box">
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/unity-icon.svg').read %></div>
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
+        </div>
+      </div>
+      <div class="game-link flex-box f-justify-center">
+        <%= link_to "Store Page", "https://one2manyhats.itch.io/too-many-letters", class: "project-button view", target: "_blank" %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // Too Many Letters -->
+<!-- Dark Connection -->
+<div data-controller="game-image-switch scrolling-opacity" class="game-project white">
+  <div data-scrolling-opacity-target="project" class="game-project-card white flex-box f-justify-center f-align-center opacity-transition">
+    <div data-scrolling-opacity-target="scrollWatcher" style="position: absolute;"></div>
+    <div class="game-project-box flex-box d-flex-column f-space-around">
+      <div class="game-project-info">
+        <h2>Dark Connection</h2>
+        <h5 style="color: var(--white-text);">Game Jam Project</h5>
+        <p>
+          A light hearted puzzle game about guiding a small chick to safety in a dark world.
+          This was made in 1 week for a game jam under the theme "connection".
+          This was a really fun project, which garnered a lot of great feedback.
+        </p>
+        <% genres = [ "Puzzle", "Adventure", "Indie", "Atmospheric", "Dark", "GameJam" ] %>
+        <div class="game-genres white flex-box">
+          <% genres.each do |genre| %>
+            <p><%= genre %></p>
+          <% end %>
+        </div>
+        <div class="games-tech-stack white flex-box">
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/unity-icon.svg').read %></div>
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/blender-icon.svg').read %></div>
+        </div>
+      </div>
+      <div class="game-link flex-box f-justify-center">
+        <%= link_to "Store Page", "https://one2manyhats.itch.io/dark-companion", class: "project-button view", target: "_blank" %>
+      </div>
+    </div>
+    <% pictures_array = [ image_path('a-light-touch/A_Light_Touch_GIF.gif'), image_path('Paulrus.jpg'), image_path('a-light-touch/a_light_touch_img.png'), image_path('a-light-touch/a_light_touch_img.png') ] %>
+    <div class="flex-box f-align-center">
+      <div class="game-pictures-box flex-box d-flex-column">
+        <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
+          <%# image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
+        </div>
+        <div class="pictures-row flex-box">
+          <% pictures_array.each do |pic| %>
+            <div data-action="click->game-image-switch#switch" data-game-image-switch-target="gameImage" class="game-picture" style="background-image: url('<%= image_path(pic) %>');"></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // Dark Connection -->
