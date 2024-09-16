@@ -4,10 +4,10 @@
     <div data-scrolling-opacity-target="scrollWatcher" style="position: absolute;"></div>
     <% pictures_array = [ image_path('a-light-touch/A_Light_Touch_GIF.gif'), image_path('a-light-touch/a-light-touch1.png'), image_path('a-light-touch/a-light-touch2.png'), image_path('a-light-touch/a-light-touch3.png'), image_path('a-light-touch/a-light-touch4.png') ] %>
     <div class="flex-box f-align-center">
-      <div class="game-pictures-box flex-box d-flex-column">
+      <div class="game-pictures-box black flex-box d-flex-column">
         <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
           <%= image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute; bottom: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
-          <h3 style="position: absolute; top: 0px; left: -50px; transform: rotate(328deg);">In progress...</h3>
+          <h3>In progress...</h3>
         </div>
         <div class="pictures-row flex-box">
           <% pictures_array.each do |pic| %>
@@ -74,7 +74,7 @@
     </div>
     <% pictures_array = [ image_path('paulrus/Paulrus1.png'), image_path('paulrus/Paulrus2.JPG'), image_path('paulrus/Paulrus3.JPG'), image_path('paulrus/Paulrus4.JPG') ] %>
     <div class="flex-box f-align-center">
-      <div class="game-pictures-box flex-box d-flex-column">
+      <div class="game-pictures-box white flex-box d-flex-column">
         <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
           <%# image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
         </div>
@@ -94,7 +94,7 @@
     <div data-scrolling-opacity-target="scrollWatcher" style="position: absolute;"></div>
     <% pictures_array = [ image_path('too-many-letters/TooManyLetters.png'), image_path('too-many-letters/toomanyletters1.jpg'), image_path('too-many-letters/toomanyletters2.jpg'), image_path('too-many-letters/toomanyletters3.jpg') ] %>
     <div class="flex-box f-align-center">
-      <div class="game-pictures-box flex-box d-flex-column">
+      <div class="game-pictures-box black flex-box d-flex-column">
         <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
           <%# image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
         </div>
@@ -155,7 +155,6 @@
         <div class="games-tech-stack white flex-box">
           <div><%= render inline: Rails.root.join('app/assets/images/icons/unity-icon.svg').read %></div>
           <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
-          <div><%= render inline: Rails.root.join('app/assets/images/icons/blender-icon.svg').read %></div>
         </div>
       </div>
       <div class="game-link flex-box f-justify-center">
@@ -164,7 +163,7 @@
     </div>
     <% pictures_array = [ image_path('dark-connection/dark-connection-cover.png'), image_path('dark-connection/dark-connection1.jpg'), image_path('dark-connection/dark-connection2.jpg'), image_path('dark-connection/dark-connection3.jpg') ] %>
     <div class="flex-box f-align-center">
-      <div class="game-pictures-box flex-box d-flex-column">
+      <div class="game-pictures-box white flex-box d-flex-column">
         <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
           <%# image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
         </div>

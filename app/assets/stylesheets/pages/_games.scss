@@ -1,3 +1,26 @@
+.games-banner{
+  height: 81vh;
+  background-color: var(--black);
+
+  h1{
+    font-size: 4rem;
+  }
+}
+
+.games-projects-container{
+  background: var(--grey-back);
+  position: relative;
+
+  .title{
+    color: var(--black);
+    margin-bottom: 32px;
+    background: var(--white-text);
+    padding: 16px;
+    border-top: 3px solid var(--black);
+    border-bottom: 3px solid var(--black);
+  }
+}
+
 .game-project.black{
   background: var(--black);
   padding: 124px 0;
@@ -24,12 +47,33 @@
   color: var(--black);
 }
 
-.game-pictures-box{
+.game-pictures-box.black{
   min-width: 500px;
   height: 450px;
   background: #222222;
   margin: 16px;
+
+  h3{
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    transform: rotate(328deg);
+  }
 }
+.game-pictures-box.white{
+  min-width: 500px;
+  height: 450px;
+  background: #929292;
+  margin: 16px;
+
+  h3{
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    transform: rotate(328deg);
+  }
+}
+
 
 .game-main-img{
   // transition: background-image 0.4s;
@@ -138,5 +182,124 @@
 
   div:hover{
     color: var(--black);
+  }
+}
+
+// Media queries
+//
+//
+
+
+@media (max-width: 1024px){
+  .games-banner{
+    h1{
+      font-size: 3rem;
+    }
+  }
+
+  .game-pictures-box.black{
+    min-width: 400px;
+    height: 350px;
+
+    h3{
+      left: -35px;
+    }
+  }
+  .game-pictures-box.white{
+    min-width: 400px;
+    height: 350px;
+
+    h3{
+      left: -35px;
+    }
+  }
+
+}
+
+@media (max-width: 768px){
+  .games-banner{
+    height: 70vh;
+
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+
+  .game-project-card{
+    margin: 0;
+    &.white{
+      padding: 32px 0;
+      flex-direction: column-reverse;
+    }
+    &.black{
+      padding: 32px 0;
+      flex-direction: column;
+    }
+  }
+
+  .game-pictures-box.black{
+    min-width: 500px;
+    height: 400px;
+
+    h3{
+      left: -25px;
+      font-size: 1.3rem;
+    }
+  }
+  .game-pictures-box.white{
+    min-width: 500px;
+    height: 400px;
+
+    h3{
+      left: -25px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .game-pictures-box.black{
+    min-width: 400px;
+    height: 350px;
+  }
+  .game-pictures-box.white{
+    min-width: 400px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px){
+  .games-banner{
+    h1{
+      font-size: 1.5rem;
+    }
+  }
+
+  .game-project-black{
+    padding: 64px 0;
+  }
+  .game-project-white{
+    padding: 64px 0;
+  }
+
+  .game-pictures-box.black{
+    min-width: 350px;
+    height: 250px;
+
+    h3{
+      left: -15px;
+      top: 5px;
+      font-size: 1.1rem;
+    }
+  }
+  .game-pictures-box.white{
+    min-width: 350px;
+    height: 250px;
+
+    h3{
+      left: -15px;
+      top: 5px;
+      font-size: 1.1rem;
+    }
   }
 }
