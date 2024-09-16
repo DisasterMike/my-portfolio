@@ -23,7 +23,7 @@ jp:
           <br>
           新しいスキルを学ぶのと、新しい人に会うのが大好きなので、いつでもお気軽にご連絡ください。"
   contact-chat: "話したい？"
-  contact-mail-me-a: "contact@one2manyhats.comに<span><a class='text-link highlighted' href='https://mail.google.com/mail/?view=cm&fs=1&to=contact@one2manyhats.com'>メールしてね<a></span>。"
+  contact-mail-me-a: "contact@one2manyhats.comに<span><a class='text-link highlighted' href='https://mail.google.com/mail/?view=cm&fs=1&to=contact@one2manyhats.com' target='_blank'>メールしてね<a></span>。"
   contact-mail-me-b: "それとも、私の  LinkedInかGitHubを見てください！"
   web-info-text: "\"ウェブ開発を専門していて、クリエイティブのデザインとアニメーションに興味があります。 フロントエンドとバックエンドの経験があり、例えば、HTML, CSS, JavaScript, Ruby on Rails, PostgreSQLなどです。
                 今後は、Reactやフロントエンドのフレームワークをさらに勉強したいと思っています。\""

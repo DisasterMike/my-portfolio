@@ -52,7 +52,7 @@ en:
           <br>
           I love learning and meeting new people, so feel free to reach out!"
   contact-chat: "Fancy a chat?"
-  contact-mail-me-a: "Feel free to <span><a class='text-link highlighted' href='https://mail.google.com/mail/?view=cm&fs=1&to=contact@one2manyhats.com'>Send me an email<a></span> at contact@one2manyhats.com."
+  contact-mail-me-a: "Feel free to <span><a class='text-link highlighted' href='https://mail.google.com/mail/?view=cm&fs=1&to=contact@one2manyhats.com' target='_blank'>Send me an email<a></span> at contact@one2manyhats.com."
   contact-mail-me-b: "Or check out my Linkedin or Github below!"
   web-info-text: "\"I specialize in full stack web development, with a love for creating interesting designs and animations.
                 I have experience in various front-end and back-end technologies, such as HTML, CSS, Javascript, Ruby on Rails, PostgreSQL and more.
