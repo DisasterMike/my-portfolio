@@ -1,14 +1,27 @@
-.game-project{
+.game-project.black{
   background: var(--black);
   padding: 124px 0;
 }
+.game-project.white{
+  // background: var(--black);
+  padding: 124px 0;
+}
 
-.game-project-card{
+.game-project-card.black{
   padding: 32px;
   max-width: 1000px;
   margin: 0 auto;
   border-top: 2px solid var(--white-text);
   border-bottom: 2px solid var(--white-text);
+}
+
+.game-project-card.white{
+  padding: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+  color: var(--black);
 }
 
 .game-pictures-box{
@@ -59,6 +72,7 @@
 .game-genres.black{
   gap: 16px;
   margin: 16px 0;
+  flex-wrap: wrap;
 
   p{
     background-color: var(--white-text);
@@ -73,6 +87,26 @@
   p:hover{
     background-color: var(--black);
     color: var(--white-text);
+  }
+}
+.game-genres.white{
+  gap: 16px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+
+  p{
+    background-color: var(--black);
+    color: var(--white-text);
+    border-radius: 8px;
+    padding: 2px 10px;
+    margin: 0;
+    height: fit-content;
+    cursor: default;
+  }
+
+  p:hover{
+    background-color: var(--white-text);
+    color: var(--black);
   }
 }
 

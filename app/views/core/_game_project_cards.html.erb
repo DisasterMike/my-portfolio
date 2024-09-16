@@ -1,0 +1,84 @@
+<!-- A Light Touch -->
+<div data-controller="game-image-switch" class="game-project black">
+  <div class="game-project-card black flex-box f-justify-center">
+    <% pictures_array = [ image_path('a-light-touch/A_Light_Touch_GIF.gif'), image_path('Paulrus.jpg'), image_path('a-light-touch/a_light_touch_img.png'), image_path('a-light-touch/a_light_touch_img.png') ] %>
+    <div class="flex-box f-align-center">
+      <div class="game-pictures-box flex-box d-flex-column">
+        <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
+          <%= image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
+        </div>
+        <div class="pictures-row flex-box">
+          <% pictures_array.each do |pic| %>
+            <div data-action="click->game-image-switch#switch" data-game-image-switch-target="gameImage" class="game-picture" style="background-image: url('<%= image_path(pic) %>');"></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="game-project-box flex-box d-flex-column f-space-around">
+      <div class="game-project-info">
+        <h2>A Light Touch</h2>
+        <h5 style="color: var(--highlight);">Commercial Project</h5>
+        <p>
+          A light puzzle game about guiding a small chick to safety in a dark world.
+          As you explore you'll uncover secrets, ward off monsters and safely excort your new companion to try and dispell the darkness.
+        </p>
+        <% genres = [ "Puzzle", "Adventure", "Indie", "Atmospheric", "Dark" ] %>
+        <div class="game-genres black flex-box">
+          <% genres.each do |genre| %>
+            <p><%= genre %></p>
+          <% end %>
+        </div>
+        <div class="games-tech-stack black flex-box">
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/unity-icon.svg').read %></div>
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
+        </div>
+      </div>
+      <div class="game-link">
+        <p>Steam store page coming soon...</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // A Light Touch -->
+<!-- Paulrus -->
+<div data-controller="game-image-switch" class="game-project white">
+  <div class="game-project-card white flex-box f-justify-center">
+    <div class="game-project-box flex-box d-flex-column f-space-around">
+      <div class="game-project-info">
+        <h2>Paulrus and The Lost Waters</h2>
+        <h5 style="color: var(--white-text);">Prototype</h5>
+        <p>
+          A light puzzle game about guiding a small chick to safety in a dark world.
+          As you explore you'll uncover secrets, ward off monsters and safely excort your new companion to try and dispell the darkness.
+        </p>
+        <% genres = [ "3D Platformer", "Indie", "Adventure", "Cartoony", "Collectathon", "Action" ] %>
+        <div class="game-genres white flex-box">
+          <% genres.each do |genre| %>
+            <p><%= genre %></p>
+          <% end %>
+        </div>
+        <div class="games-tech-stack white flex-box">
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/unity-icon.svg').read %></div>
+          <div><%= render inline: Rails.root.join('app/assets/images/icons/c#-icon.svg').read %></div>
+        </div>
+      </div>
+      <div class="game-link">
+        <p>Steam store page coming soon...</p>
+      </div>
+    </div>
+    <% pictures_array = [ image_path('a-light-touch/A_Light_Touch_GIF.gif'), image_path('Paulrus.jpg'), image_path('a-light-touch/a_light_touch_img.png'), image_path('a-light-touch/a_light_touch_img.png') ] %>
+    <div class="flex-box f-align-center">
+      <div class="game-pictures-box flex-box d-flex-column">
+        <div data-game-image-switch-target="mainImage" class="game-main-img" style="background-image: url('<%= image_path(pictures_array[0]) %>');">
+          <%= image_tag( "a-light-touch/a_light_touch_logo.png", style: "position: absolute;top: 5px; left: 5px; width: 80px; opacity: 0.5;" ) %>
+        </div>
+        <div class="pictures-row flex-box">
+          <% pictures_array.each do |pic| %>
+            <div data-action="click->game-image-switch#switch" data-game-image-switch-target="gameImage" class="game-picture" style="background-image: url('<%= image_path(pic) %>');"></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // Paulrus -->
