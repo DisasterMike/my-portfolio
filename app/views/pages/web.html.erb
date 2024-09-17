@@ -1,4 +1,10 @@
-<div class="web-banner flex-box f-justify-center f-align-center">
+<div class="web-banner flex-box f-justify-center f-align-center d-flex-column">
+  <div class="flex-box">
+    <div class="title-tech" style="transform: rotate(17deg); position: relative; left: 8px; bottom: 5px;"><%= render inline: Rails.root.join('app/assets/images/icons/html-icon.svg').read %></div>
+    <div class="title-tech"><%= render inline: Rails.root.join('app/assets/images/icons/javascript-icon.svg').read %></div>
+    <div class="title-tech" style="transform: rotate(272deg); position: relative; top: 4px; right: 3px;"><%= render inline: Rails.root.join('app/assets/images/icons/css-icon.svg').read %></div>
+    <div class="title-tech" style="transform: rotate(48deg);"><%= render inline: Rails.root.join('app/assets/images/icons/git-icon.svg').read %></div>
+  </div>
   <h1>< Web Development ></h1>
   </div>
   <div class="web-projects-container">
