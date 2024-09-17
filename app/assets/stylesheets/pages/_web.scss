@@ -244,6 +244,18 @@
   .outer-box.white{
     flex-direction: column-reverse;
   }
+
+  .middle-down-arrow{
+
+    div{
+      width: 100px;
+      height: 100px;
+    }
+
+    i{
+      font-size: 3rem;
+    }
+  }
 }
 
 // @media (max-width: 600px){
@@ -281,5 +293,17 @@
 
   .scrollWatcher{
     top: 40%;
+  }
+
+  .middle-down-arrow{
+
+    div{
+      width: 95px;
+      height: 95px;
+    }
+
+    i{
+      font-size: 2.5rem;
+    }
   }
 }
