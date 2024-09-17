@@ -3,7 +3,27 @@
   background-color: var(--black);
 
   h1{
-    font-size: 4rem;
+    font-size: 3rem;
+    padding: 45px 0 45px 45px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .game-title-box{
+    // border-radius: 138px 0 0 12px;
+    border-radius: 64px 0 0 8px;
+    background-size: contain;
+    max-width: 750px;
+    margin: 0 24px;
+  }
+
+  .title-left{
+    width: 250px;
+  }
+
+  .title-right{
+    background: var(--black);
+    border-radius: 200px 0 0 0;
   }
 }
 
@@ -197,7 +217,15 @@
 @media (max-width: 1024px){
   .games-banner{
     h1{
-      font-size: 3rem;
+      font-size: 2.5rem;
+    }
+
+    .game-title-box{
+      max-width: 620px;
+    }
+
+    .title-left{
+      width: 215px;
     }
   }
 
@@ -225,7 +253,11 @@
     height: 70vh;
 
     h1{
-      font-size: 2.5rem;
+      font-size: 2rem;
+    }
+
+    .game-title-box{
+      max-width: 450px;
     }
   }
 
@@ -275,7 +307,15 @@
 @media (max-width: 480px){
   .games-banner{
     h1{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .game-title-box{
+      max-width: 350px;
+    }
+
+    .title-left{
+      width: 150px;
     }
   }
 
