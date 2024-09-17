@@ -7,6 +7,10 @@
   }
 }
 
+.scrollWatcher{
+  position: absolute;
+}
+
 .games-projects-container{
   background: var(--grey-back);
   position: relative;
@@ -301,5 +305,9 @@
       top: 5px;
       font-size: 1.1rem;
     }
+  }
+
+  .scrollWatcher{
+    top: 40%;
   }
 }

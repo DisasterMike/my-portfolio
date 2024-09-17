@@ -7,6 +7,10 @@
   }
 }
 
+.scrollWatcher{
+  position: absolute;
+}
+
 .web-projects-container{
   // height: 5000px;
   background: var(--grey-back);
@@ -257,5 +261,9 @@
 
   .project-view-button{
     justify-content: center;
+  }
+
+  .scrollWatcher{
+    top: 40%;
   }
 }
