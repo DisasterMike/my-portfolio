@@ -65,12 +65,33 @@
   }
 }
 
-.web-project-black{
+.web-project.black{
   padding: 124px 0;
   background: var(--black);
+
+  .outer-box{
+    // background-color: #ffffffe0;
+    // color: var(--black);
+    // border-radius: 6px;
+    border-top: 2px solid var(--white-text);
+    border-bottom: 2px solid var(--white-text);
+    padding: 32px;
+    max-width: 1000px;
+  }
+
 }
-.web-project-white{
+.web-project.white{
   padding: 124px 0;
+
+  .outer-box{
+    // background-color: #ffffffe0;
+    color: var(--black);
+    // border-radius: 6px;
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    padding: 32px;
+    max-width: 1000px;
+  }
 }
 
 .project-image{
@@ -90,24 +111,7 @@
   //   max-width: 1000px;
   // }
 
-  .outer-box.black{
-    // background-color: #ffffffe0;
-    // color: var(--black);
-    // border-radius: 6px;
-    border-top: 2px solid var(--white-text);
-    border-bottom: 2px solid var(--white-text);
-    padding: 32px;
-    max-width: 1000px;
-  }
-  .outer-box.white{
-    // background-color: #ffffffe0;
-    color: var(--black);
-    // border-radius: 6px;
-    border-top: 2px solid var(--black);
-    border-bottom: 2px solid var(--black);
-    padding: 32px;
-    max-width: 1000px;
-  }
+
 
   .project-image{
     padding: 16px;
@@ -125,7 +129,7 @@
   }
 }
 
-.tech-stack.black{
+.web-project.black .tech-stack{
   margin-bottom: 16px;
 
   div{
@@ -139,7 +143,7 @@
     color: var(--white-text);
   }
 }
-.tech-stack.white{
+.web-project.white .tech-stack{
   margin-bottom: 16px;
 
   div{
@@ -230,19 +234,20 @@
 
   .web-project-card{
     margin: 0;
-    .outer-box.white{
-      padding: 32px 0;
-    }
-    .outer-box.black{
+    .outer-box{
       padding: 32px 0;
     }
   }
 
-  .outer-box.black{
-    flex-direction: column;
+  .web-project.black{
+    .outer-box{
+      flex-direction: column;
+    }
   }
-  .outer-box.white{
-    flex-direction: column-reverse;
+  .web-project.white{
+    .outer-box{
+      flex-direction: column-reverse;
+    }
   }
 
   .middle-down-arrow{
@@ -273,10 +278,10 @@
     }
   }
 
-  .web-project-black{
+  .web-project.black{
     padding: 64px 0;
   }
-  .web-project-white{
+  .web-project.white{
     padding: 64px 0;
   }
 
