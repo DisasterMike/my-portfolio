@@ -35,6 +35,25 @@
   }
 }
 
+.nav-element{
+  position: relative;
+}
+
+.nav-element::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 8px;
+  background-color: var(--highlight);
+  transition: transform 0.25s ease-out;
+}
+
+.nav-element:hover::after {
+  transform: scaleX(1);
+}
+
 .sticking-nav{
   position: fixed;
   top: 16px;
@@ -55,6 +74,10 @@
 
   p{
     display: none;
+  }
+
+  .nav-element::after{
+    transform: scaleX(0);
   }
 }
 
