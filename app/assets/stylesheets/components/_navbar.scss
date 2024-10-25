@@ -46,6 +46,7 @@
   transform: scaleX(0);
   height: 4px;
   bottom: 8px;
+  left: 0;
   background-color: var(--highlight);
   transition: transform 0.25s ease-out;
 }
@@ -158,5 +159,9 @@
     i{
       font-size: 1.5rem;
     }
+  }
+
+  .nav-element:hover::after{
+    transform: scaleX(0);
   }
 }
